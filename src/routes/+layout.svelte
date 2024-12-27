@@ -21,7 +21,7 @@
 
 <nav class="navbar navbar-expand-sm fixed-top p-0 shadow bg-secondary">
   <div class="container-xl">
-    <a class="navbar-brand" href="./"> <img id="logo" style="height: 5rem" src="/hydron_logo.png" alt="Hydron" /></a>
+    <a class="navbar-brand" href="./"> <img id="logo" style="height: 5rem" src="./hydron_logo.png" alt="Hydron" /></a>
     <button
       class="navbar-toggler"
       type="button"

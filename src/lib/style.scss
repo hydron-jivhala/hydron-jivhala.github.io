@@ -101,7 +101,7 @@ nav.navbar {
 }
 
 .header-2 {
-  background: url("/header-bg.jpg") right center no-repeat;
+  background: url("/home.png") right center no-repeat; 
   background-size: cover;
   background-attachment: fixed;
   color: rgb(2 8 78) !important;
@@ -117,7 +117,7 @@ nav.navbar {
 
 .header {
   background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.08)),
-    url("/Artboard2.png") right top no-repeat;
+    url("/home.png") right top no-repeat;  /* url("/Artboard2.png") right center no-repeat; */
   background-size: cover;
   background-attachment: fixed;
   color: rgb(2 8 78) !important;
@@ -131,7 +131,7 @@ nav.navbar {
   }
   .container {
     background: rgba(139, 238, 235, 0.055);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(7px);
     box-shadow: 4px 4px 9px 1px #4ee3d0b8;
   }
 }
