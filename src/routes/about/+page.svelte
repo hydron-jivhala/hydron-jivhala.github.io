@@ -1,0 +1,216 @@
+<script>
+  import { onMount } from "svelte";
+  import * as main from "../../lib/main.js";
+
+  onMount(() => {
+    main.setupSwiper();
+  });
+</script>
+  
+
+
+<div class="container-xl my-8">
+  <h4 class="display-4 my-5 text-center text-muted fw-normal">About Hydron Healthcare Pvt. Ltd.</h4>
+
+  <div class="mt-5 card shadow-lg bg-body-secondary bg-gradient">
+    <div class="card-body d-flex">
+      <!-- <img src="./assets/pharma.jpg" alt="" class="card-img-top img-thumbnail shadow" style="width: 200px; height: 200px" /> -->
+      <div class="row px-2 px-sm-4 text-center">
+        <div class="card-title display-6 fw-medium">Our Mission</div>
+        <!--  <div class="card-title fw-semibold lead">Empowering Health, Enriching Lives:</div> -->
+        <p class="lead fw-normal text-muted">
+          Hydron is a dedicated healthcare solutions company that aims to provide exceptional services to its clients. We are committed to
+          delivering innovative and customized solutions that meet your specific health needs.
+        </p>
+        <p class="lead fw-normal text-muted">
+          We’re not just a pharmaceutical company; we’re a mission-driven force committed to ensuring that life-changing medications reach every
+          corner, every patient.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-5 card shadow-lg bg-body-secondary bg-gradient">
+    <div class="card-body d-flex">
+      <div class="row px-2 px-sm-4 text-center">
+        <div class="card-title display-6 fw-medium">Empowering Health, Enriching Lives</div>
+        <p class="lead fw-normal text-muted">
+          Our mission is simple yet profound: to improve global health outcomes by developing and delivering safe, effective medications. We
+          strive to be at the forefront of medical advancements, addressing unmet needs and enhancing quality of life.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-5 card shadow-lg bg-body-secondary bg-gradient">
+    <div class="card-body d-flex">
+      <!-- <img src="./assets/pharma.jpg" alt="" class="card-img-top img-thumbnail shadow" style="width: 200px; height: 200px" /> -->
+      <div class="row px-2 px-sm-4 text-center">
+        <div class="card-title display-6 fw-medium">Our Story</div>
+        <p class="lead fw-normal text-muted">
+          At Hydron, we believe in a healthier, brighter future. Our journey began 10 years ago with a vision: to transform lives through
+          innovative pharmaceutical solutions. Since then, we've remained steadfast in our commitment to excellence, research, and patient
+          well-being.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-5 card shadow-lg bg-body-secondary bg-gradient">
+    <div class="card-body d-flex">
+      <!-- <img src="./assets/pharma.jpg" alt="" class="card-img-top img-thumbnail shadow" style="width: 200px; height: 200px" /> -->
+      <div class="row px-2 px-sm-4">
+        <div class="card-title text-center display-6 fw-medium">What Sets Us Apart</div>
+        <ul class="list-group-flush border-0 lead fw-normal text-muted">
+          <li class="list-group-item"><b> Scientific Excellence : </b>Our dedicated team work tirelessly to unravel the mysteries of disease.</li>
+          <li class="list-group-item">
+            <b> Patient-Centric Approach : </b>Patients are at the heart of everything we do. We listen, empathize, and collaborate with
+            healthcare professionals to develop therapies that make a difference. Our commitment extends beyond molecules—it's about improving
+            lives.
+          </li>
+          <li class="list-group-item">
+            <b> Quality Assurance : </b> Safety and quality are non-negotiable. Our state-of-the-art manufacturing facilities adhere to the
+            highest industry standards. Every batch undergoes rigorous quality control to ensure efficacy and purity.
+          </li>
+          <li class="list-group-item">
+            <b> Wide Impact : </b> From rural clinics to bustling cities, our products reach many. We're proud to contribute to healthier
+            communities.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-5 card shadow-lg bg-body-secondary bg-gradient">
+    <div class="card-body">
+      <div class="row px-2 px-sm-4">
+        <div class="card-title text-center display-6 fw-medium">Our Values</div>
+        <ul class="list-group-flush border-0 lead fw-normal text-muted">
+          <li class="list-group-item"><b> Integrity : </b> We operate transparently, guided by ethical principles. Trust is our currency.</li>
+          <li class="list-group-item"><b> Innovation : </b> Curiosity fuels progress. We embrace novel ideas and challenge conventions.</li>
+          <li class="list-group-item">
+            <b> Collaboration : </b> We believe in synergy. Partnerships with healthcare providers, researchers, and patient advocacy groups drive
+            meaningful change.
+          </li>
+          <li class="list-group-item">
+            <b> Resilience : </b> The path to discovery is rarely smooth. We persist, adapt, and learn from setbacks.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-5 card shadow-lg bg-body-secondary bg-gradient">
+    <div class="card-body d-flex">
+      <div class="row px-2 px-sm-4 text-center">
+        <div class="card-title display-6 fw-medium">Join Our Journey</div>
+        <p class="lead fw-normal text-muted">
+          Whether you're a healthcare professional, investor, or simply curious, we invite you to explore our website, learn about our products,
+          services and connect with us. Together, we can rewrite the future of healthcare.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="text-center mt-7">Meet Our Leadership</h2>
+
+  <div class="row my-3 justify-content-center">
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="card border-0 shadow-lg my-3">
+        <div class="card-body px-4">
+          <div class="text-center">
+            <img
+              style="width: 35%"
+              class="rounded-circle shadow card-img-top"
+              src="https://bootdey.com/img/Content/avatar/avatar8.png"
+              alt="Team member" />
+          </div>
+          <div class="card-text pt-1">
+            <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Girish Shinde</h5>
+            <div class="mb-3 text-center">Director</div>
+            <div>A visionary leader with a passion for patient-centric innovation.</div>
+          </div>
+
+          <div class="card-footer border-0 text-center mt-2">
+            <ul class="social-list list-inline mb-0 mx-auto">
+              <li class="list-inline-item px-2">
+                <a class="text-dark" href="#"> <i class="fab fa-twitter fs-5"></i> </a>
+              </li>
+              <li class="list-inline-item px-2">
+                <a class="text-dark" href="#"> <i class="fab fa-facebook-f fs-5"></i> </a>
+              </li>
+              <li class="list-inline-item px-2">
+                <a class="text-dark" href="#"> <i class="fab fa-instagram fs-5"></i> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="card border-0 shadow-lg my-3">
+        <div class="card-body px-4">
+          <div class="text-center">
+            <img
+              style="width: 35%"
+              class="rounded-circle shadow card-img-top"
+              src="https://bootdey.com/img/Content/avatar/avatar4.png"
+              alt="Team member" />
+          </div>
+          <div class="card-text pt-1">
+            <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Girish Shinde</h5>
+            <div class="mb-3 text-center">Product Manager</div>
+            <div>A visionary leader with a passion for patient-centric innovation.</div>
+          </div>
+
+          <div class="card-footer border-0 text-center mt-2">
+            <ul class="social-list list-inline mb-0 mx-auto">
+              <li class="list-inline-item px-2">
+                <a class="text-dark" href="#"> <i class="fab fa-twitter fs-5"></i> </a>
+              </li>
+              <li class="list-inline-item px-2">
+                <a class="text-dark" href="#"> <i class="fab fa-facebook-f fs-5"></i> </a>
+              </li>
+              <li class="list-inline-item px-2">
+                <a class="text-dark" href="#"> <i class="fab fa-instagram fs-5"></i> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="card border-0 shadow-lg my-3">
+        <div class="card-body px-4">
+          <div class="text-center">
+            <img
+              style="width: 35%"
+              class="rounded-circle shadow card-img-top"
+              src="https://bootdey.com/img/Content/avatar/avatar1.png"
+              alt="Team member" />
+          </div>
+          <div class="card-text pt-1">
+            <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Girish Shinde</h5>
+            <div class="mb-3 text-center">Chief Scientific Officer</div>
+            <div>A trailblazer in drug development, committed to advancing medical science.</div>
+          </div>
+
+          <div class="card-footer border-0 text-center mt-2">
+            <ul class="social-list list-inline mb-0 mx-auto">
+              <li class="list-inline-item px-2">
+                <a class="text-dark" href="#"> <i class="fab fa-twitter fs-5"></i> </a>
+              </li>
+              <li class="list-inline-item px-2">
+                <a class="text-dark" href="#"> <i class="fab fa-facebook-f fs-5"></i> </a>
+              </li>
+              <li class="list-inline-item px-2">
+                <a class="text-dark" href="#"> <i class="fab fa-instagram fs-5"></i> </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

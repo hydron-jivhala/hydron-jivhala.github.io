@@ -1,0 +1,196 @@
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 8,
+  8: $spacer * 10,
+);
+$enable-negative-margins: true;
+$line-height-base: 1.7;
+$input-btn-line-height: 1.5;
+$link-shade-percentage: 40%;
+
+/* $primary: #ffc107; */
+$secondary: #3baeba;; /*#3baeba;*/
+$dark: #1a485e;
+
+$navbar-nav-link-padding-x: calc(0.7rem + 0.5vw);
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
+ */
+ 
+$font-family-sans-serif: "Open Sans", "Hind", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans",
+  "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+/* 
+@import "node_modules/animate.css/animate.min.css";*/
+:root {
+  --animate-duration: 1200ms;
+  /* --animate-delay: 0.9s; */
+}  /*  */
+
+ 
+
+html {
+  scroll-behavior: smooth;
+}
+
+.body {
+  background: linear-gradient(113deg, #00c9ff5c 0%, #ffaa103b 100%) !important;
+}
+
+nav.navbar {
+  transition: all 0.2s ease-in-out;
+}
+.sticky-nav {
+  background-color: $secondary;
+  opacity: 0.95;
+  a {
+    padding: 0 auto !important;
+  }
+  a:hover {
+    background-color: $light !important;
+  }
+  img {
+    padding: 0 !important;
+    height: 3rem !important;
+  }
+}
+
+.header-prod {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, rgba(212, 249, 253, 0.911), rgba(237, 253, 251, 0.959)),
+    url("/product-bg.svg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(41, 0, 39) !important;
+  h1 {
+    text-shadow: 0px 2px 2px rgba(176, 185, 183, 0.4);
+  }
+  .features li {
+    border-color: #1a485e;
+    /* background-image: linear-gradient(225deg, #66335ba6 10%, #24425a 60%, #2f615bd8 90%); */
+    background-image: linear-gradient(109.6deg, rgba(15, 2, 2, 1) 11.2%, rgba(36, 163, 190, 1) 91.1%);
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(15, 146, 148) 0%, rgb(76, 163, 115) 90%);
+  }
+}
+
+.header-spices {
+  /* min-height: 100vh; */
+  background: linear-gradient(to bottom right, rgba(100, 65, 44, 0.664), rgba(0, 0, 0, 0.651)), url("/spices.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(255, 255, 255) !important;
+  h1 {
+    text-shadow: 0px 2px 2px rgba(176, 185, 183, 0.4);
+  }
+  .features .card {
+    backdrop-filter: blur(10px);
+  }
+}
+
+.header-2 {
+  background: url("/header-bg.jpg") right center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(2 8 78) !important;
+  p,
+  h1,
+  h4 {
+    text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
+  }
+  .features li {
+    background-image: linear-gradient(225deg, #258596 0%, #8159a0 50%, #2b86c5 100%);
+  }
+}
+
+.header {
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.08)),
+    url("/Artboard2.png") right top no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(2 8 78) !important;
+  p,
+  h1,
+  h4 {
+    text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
+  }
+  .features li {
+    background-image: linear-gradient(225deg, #258596 0%, #8159a0 50%, #2b86c5 100%);
+  }
+  .container {
+    background: rgba(139, 238, 235, 0.055);
+    backdrop-filter: blur(10px);
+    box-shadow: 4px 4px 9px 1px #4ee3d0b8;
+  }
+}
+
+.card {
+  /* animation: fadeInUp;
+  animation-duration: 2s; */
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.04);
+}
+
+a:hover {
+  text-shadow: 0px 0px 4px rgba($light, 0.4);
+  letter-spacing: 0.7px;
+  transition: all 0.2s ease-in-out;
+}
+
+.border-sm-0 {
+  @include media-breakpoint-down(sm) {
+    border-left: 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-xl {
+    --bs-modal-width: 85% !important;
+  }
+}
+
+.fslightbox-container {
+  background: linear-gradient(rgba(30, 30, 30, 0.7), #000 1810%) !important;
+}
+
+.lightbox-on {
+  margin: 0 auto;
+  overflow-y: scroll;
+  width: 100% !important;
+  padding: 35px !important;
+}
+@media (min-width: 992px) {
+  .lightbox-on {
+    width: 92% !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #83b1ac;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #103d57;
+}
