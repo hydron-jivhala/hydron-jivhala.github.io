@@ -8,7 +8,7 @@
 
   onMount(() => {
     main.setupSwiper();
-    new WOW({ live: false, animateClass: "animate__animated" }).init();
+    // new WOW({ live: false, animateClass: "animate__animated" }).init();
   });
 </script>
 
@@ -28,7 +28,7 @@
       >
         <div class="container">
           <div class="row d-flex mt-3 gy-3">
-            <h1 class="display-3 text-center fw-bolder m-0 mt-3 text-success wow animate__bounce">
+            <h1 class="display-3 text-center fw-bolder m-0 mt-3 text-success">
               <sup><i class="fa fa-prescription fs-5"></i></sup>
               {prod.Name}
             </h1>
@@ -86,9 +86,6 @@
             </div>
           </div>
         </div>
-
-
-
       </div>
     </div>
   </div>

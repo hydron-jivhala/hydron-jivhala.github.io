@@ -5,6 +5,7 @@
   import { selectedItem, medList } from "./data.svelte.js";
 
   const startMed = medList.filter((m) => m.Item < 5);
+  let wow;
   onMount(() => {
     main.setupSwiper();
 
@@ -16,9 +17,9 @@
       selectedItem.item = card.getAttribute("data-bs-item"); // Extract info from data-bs-* attributes
     });
 
-    new WOW({ live: false, animateClass: "animate__animated" }).init();
 
-    
+    wow = new WOW({ live: false, animateClass: "animate__animated" }).init();
+
   });
 </script>
 
