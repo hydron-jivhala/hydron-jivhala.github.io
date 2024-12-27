@@ -30,7 +30,8 @@ $navbar-nav-link-padding-x: calc(0.7rem + 0.5vw);
 $font-family-sans-serif: "Open Sans", "Hind", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans",
   "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-@import "../../node_modules/bootstrap/scss/bootstrap";
+  @import "../../node_modules/bootstrap/scss/bootstrap";
+  @import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
 /* 
 @import "node_modules/animate.css/animate.min.css";*/

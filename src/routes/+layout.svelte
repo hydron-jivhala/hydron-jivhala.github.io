@@ -16,7 +16,7 @@
 
 <svelte:head>
   <script src={scriptSrc}></script>
-  <link href="./../node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
+  <!-- <link href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" /> -->
 </svelte:head>
 
 <nav class="navbar navbar-expand-sm fixed-top p-0 shadow bg-secondary">

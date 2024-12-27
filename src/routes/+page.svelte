@@ -149,7 +149,7 @@
     {#each medList as med, i}
       <div class="col-sm-6 col-md-4 wow animate__fadeInUp">
         <div class="card shadow">
-          <img class="card-img-top" src="/{med.Item}_med.jpeg" />
+          <img class="card-img-top" src="./{med.Item}_med.jpeg" />
           <div
             class="card-body"
             style="background: linear-gradient(157.59deg, hsla(0, 0%, 100%, 0.1) -2.85%, rgba(87, 67, 143, 0.1) 89.86%)"
