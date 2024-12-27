@@ -21,6 +21,11 @@
   <script src={scriptSrc}></script>
   <script src={scriptSrc2}></script>
   <!-- <link href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" /> -->
+
+
+  <title>Hydron Healthcare Pvt. Ltd.</title>
+  <meta name="description" content="Hydron Medical products and Jivhala Masale">
+
 </svelte:head>
 
 <nav class="navbar navbar-expand-sm fixed-top p-0 shadow bg-secondary">
