@@ -1,7 +1,8 @@
 <script>
   import { onMount } from "svelte";
   import * as main from "../lib/main.js";
-  import scriptSrc from "bootstrap/dist/js/bootstrap.bundle.js?url";
+  import scriptSrc from "bootstrap/dist/js/bootstrap.bundle.min.js?url";
+  import scriptSrc2 from "wowjs/dist/wow.js?url";
   import Product from "./Product.svelte";
 
   /*    import "/style.scss";   */
@@ -9,19 +10,22 @@
   /*   import * as bootstrap from "./node_modules/bootstrap"; // Import all of Bootstrap's JS */
 
   let { children } = $props();
+
   onMount(() => {
     main.setupScrollBtn();
+    new WOW({ live: false, animateClass: "animate__animated" }).init();
   });
 </script>
 
 <svelte:head>
   <script src={scriptSrc}></script>
+  <script src={scriptSrc2}></script>
   <!-- <link href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" /> -->
 </svelte:head>
 
 <nav class="navbar navbar-expand-sm fixed-top p-0 shadow bg-secondary">
   <div class="container-xl">
-    <a class="navbar-brand" href="./"> <img id="logo" style="height: 5rem" src="./hydron_logo.png" alt="Hydron" /></a>
+    <a class="navbar-brand rounded-pill" href="./"> <img id="logo" style="height: 5rem" src="./hydron_logo.png" alt="Hydron" /></a>
     <button
       class="navbar-toggler"
       type="button"
@@ -35,9 +39,6 @@
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link btn btn-outline-secondary rounded-pill fw-semibold" href="./">Hydron</a>
-        </li>
         <li class="nav-item">
           <a class="nav-link btn btn-outline-secondary rounded-pill fw-semibold" href="./">Hydron</a>
         </li>
@@ -141,12 +142,9 @@
 
 <!--  product modal -->
 
-
 <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
- <Product> </Product>
+  <Product></Product>
 </div>
-
-
 
 <!-- <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">

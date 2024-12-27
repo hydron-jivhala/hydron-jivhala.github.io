@@ -8,6 +8,7 @@
 
   onMount(() => {
     main.setupSwiper();
+    new WOW({ live: false, animateClass: "animate__animated" }).init();
   });
 </script>
 
@@ -27,16 +28,22 @@
       >
         <div class="container">
           <div class="row d-flex mt-3 gy-3">
-            <div class="col-lg-6 h-100 align-self-center text-center">
-              <img src="./{prod.Item}_med.jpeg" alt="" class="img-fluid shadow-lg rounded-2" style="transform:scale(1.4);"/>
-            </div>
-            <div class="col-lg-6 my-5">
-              <div class="text-center mt-4">
-                <h1 class="display-3 text-center fw-bolder m-0 mt-3 text-success">
-                  <sup><i class="fa fa-prescription fs-5"></i></sup>
-                  {prod.Name}
-                </h1>
+            <h1 class="display-3 text-center fw-bolder m-0 mt-3 text-success wow animate__bounce">
+              <sup><i class="fa fa-prescription fs-5"></i></sup>
+              {prod.Name}
+            </h1>
 
+            <div class="col-lg-6 h-100 align-self-center text-center">
+              <img
+                src="./{prod.Item}_med.jpeg"
+                alt=""
+                class="img-fluid shadow-lg rounded-2"
+                style="transform:scale(1.4);"
+              />
+            </div>
+
+            <div class="col-lg-6 my-3">
+              <div class="text-center mt-4">
                 <div class="row mt-5 gy-3">
                   {#each prod.Composition as comp}
                     <!-- <li><small class="lead fw-normal">{comp}</small></li> -->
@@ -55,7 +62,7 @@
                 <!-- <h2 class="m-0 p-0 mt-3 fst-italic">Your <span class="text-success">masterstroke</span> for</h2>
                 <h2 class="m-0 p-0 fst-italic">All types of neuropathy pain</h2> -->
 
-                <div class="  my-5">
+                <div class=" my-5">
                   <div class="text-center mb-3">
                     <div class="btn-group">
                       <span class="btn btn-warning fs-3 rounded-5 fw-lighter px-5">Effective In</span>
@@ -76,11 +83,12 @@
                   </ul>
                 </div>
               </div>
-
-              <div class="row mt-5 gy-3"></div>
             </div>
           </div>
         </div>
+
+
+
       </div>
     </div>
   </div>

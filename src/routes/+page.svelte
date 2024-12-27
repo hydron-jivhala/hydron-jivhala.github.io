@@ -15,6 +15,10 @@
       const card = event.relatedTarget; // Button that triggered the modal
       selectedItem.item = card.getAttribute("data-bs-item"); // Extract info from data-bs-* attributes
     });
+
+    new WOW({ live: false, animateClass: "animate__animated" }).init();
+
+    
   });
 </script>
 
@@ -73,7 +77,7 @@
   <div class="display-6 mt-6 text-center text-info-emphasis fw-bold">Explore All Products</div>
   <div class="row mt-4 g-4">
     {#each medList as med, i}
-      <div class="col-sm-6 col-md-4 wow animate__fadeInUp">
+      <div class="col-sm-6 col-md-4 wow animate__backInUp">
         <div class="card shadow">
           <img class="card-img-top" src="./{med.Item}_med.jpeg" />
           <div

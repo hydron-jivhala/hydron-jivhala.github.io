@@ -16,7 +16,7 @@ $input-btn-line-height: 1.5;
 $link-shade-percentage: 40%;
 
 /* $primary: #ffc107; */
-$secondary: #3baeba;; /*#3baeba;*/
+$secondary: #3baeba; /*#3baeba;*/
 $dark: #1a485e;
 
 $navbar-nav-link-padding-x: calc(0.7rem + 0.5vw);
@@ -26,21 +26,20 @@ $navbar-nav-link-padding-x: calc(0.7rem + 0.5vw);
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
 /* @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap");
  */
- 
-$font-family-sans-serif: "Open Sans", "Hind", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans",
-  "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-  @import "../../node_modules/bootstrap/scss/bootstrap";
-  @import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+$font-family-sans-serif: "Open Sans", "Hind", "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+  "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji";
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
 /* 
 @import "node_modules/animate.css/animate.min.css";*/
 :root {
   --animate-duration: 1200ms;
   /* --animate-delay: 0.9s; */
-}  /*  */
-
- 
+} /*  */
 
 html {
   scroll-behavior: smooth;
@@ -88,7 +87,8 @@ nav.navbar {
 
 .header-spices {
   /* min-height: 100vh; */
-  background: linear-gradient(to bottom right, rgba(100, 65, 44, 0.664), rgba(0, 0, 0, 0.651)), url("/spices.jpg") center center no-repeat;
+  background: linear-gradient(to bottom right, rgba(100, 65, 44, 0.664), rgba(0, 0, 0, 0.651)),
+    url("/spices.jpg") center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: rgb(255, 255, 255) !important;
@@ -101,7 +101,7 @@ nav.navbar {
 }
 
 .header-2 {
-  background: url("/home.png") right center no-repeat; 
+  background: url("/home.png") right center no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: rgb(2 8 78) !important;
@@ -117,7 +117,7 @@ nav.navbar {
 
 .header {
   background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.08)),
-    url("/home.png") center center no-repeat;  /* url("/Artboard2.png") right center no-repeat; */
+    url("/home.png") center center no-repeat; /* url("/Artboard2.png") right center no-repeat; */
   background-size: cover;
   background-attachment: fixed;
   color: rgb(2 8 78) !important;
@@ -127,7 +127,7 @@ nav.navbar {
     text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
   }
   .features li {
-    background-image: linear-gradient(225deg, #258596 0%, #8159a0 50%, #2b86c5 100%);
+    background-image: linear-gradient(225deg, #a8dbe4 0%, #8159a0 50%, #2b86c5 100%);
   }
   .container {
     background: rgba(139, 238, 235, 0.055);

@@ -1,9 +1,7 @@
 <script>
   import { onMount } from "svelte";
-  import * as main from "../../lib/main.js";
-
   onMount(() => {
-    main.setupSwiper();
+    new WOW({ live: false, animateClass: "animate__animated" }).init();
   });
 </script>
 <header class="header-spices py-7 shadow-lg">
@@ -60,7 +58,7 @@
   <div class="py-6 mt-6">
     <div class="row g-4 g-lg-5 p-2">
       <div class="col-lg-6 wow animate__fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px">
-        <img class="img-fluid w-100 h-100 rounded-3" src="./assets/chilli powder1.jpg" style="object-fit: cover" alt="" />
+        <img class="img-fluid w-100 h-100 rounded-3" src="./chilli powder1.jpg" style="object-fit: cover" alt="" />
       </div>
       <div class="col-lg-6 wow animate__fadeInUp" data-wow-delay="0.3s">
         <h1 class="mb-3 mb-lg-5">Meat Masala</h1>
@@ -87,7 +85,7 @@
         </div>
         <div class="col-lg-6 pe-lg-0 wow animate__fadeInRight" data-wow-delay="0.1s" style="min-height: 400px">
           <div class="h-100">
-            <img class="img-fluid w-100 h-100 rounded-3" src="./assets/chaat-masala-1000x1000.jpg" style="object-fit: cover" alt="" />
+            <img class="img-fluid w-100 h-100 rounded-3" src="./chaat-masala-1000x1000.jpg" style="object-fit: cover" alt="" />
           </div>
         </div>
       </div>
@@ -99,7 +97,7 @@
       <div class="row g-5 mx-lg-0">
         <div class="col-lg-6 ps-lg-0 wow animate__fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px">
           <div class="h-100">
-            <img class="img-fluid w-100 h-100 rounded-3" src="./assets/onion-garlic.jpg" style="object-fit: cover" alt="" />
+            <img class="img-fluid w-100 h-100 rounded-3" src="./onion-garlic.jpg" style="object-fit: cover" alt="" />
           </div>
         </div>
         <div class="col-lg-6 wow animate__fadeInUp" data-wow-delay="0.3s">
@@ -129,7 +127,7 @@
         </div>
         <div class="col-lg-6 pe-lg-0 wow animate__fadeInRight" data-wow-delay="0.1s" style="min-height: 400px">
           <div class="h-100">
-            <img class="img-fluid w-100 h-100 rounded-3" src="./assets/top-view-delicious-fish-meal-tray.jpg" style="object-fit: cover" alt="" />
+            <img class="img-fluid w-100 h-100 rounded-3" src="./top-view-delicious-fish-meal-tray.jpg" style="object-fit: cover" alt="" />
           </div>
         </div>
       </div>
@@ -141,7 +139,7 @@
       <div class="row g-5 mx-lg-0">
         <div class="col-lg-6 ps-lg-0 wow animate__fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px">
           <div class="h-100">
-            <img class="img-fluid w-100 h-100 rounded-3" src="./assets/top-view-bowl-with-spices.jpg" style="object-fit: cover" alt="" />
+            <img class="img-fluid w-100 h-100 rounded-3" src="./top-view-bowl-with-spices.jpg" style="object-fit: cover" alt="" />
           </div>
         </div>
         <div class="col-lg-6 wow animate__fadeInUp" data-wow-delay="0.3s">
