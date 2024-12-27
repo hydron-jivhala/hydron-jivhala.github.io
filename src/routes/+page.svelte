@@ -4,6 +4,7 @@
   import Hero from "./Hero.svelte";
   import { selectedItem, medList } from "./data.svelte.js";
 
+  const startMed = medList.filter((m) => m.Item < 5);
   onMount(() => {
     main.setupSwiper();
 
@@ -12,7 +13,7 @@
     const myModal = document.getElementById("productModal");
     myModal.addEventListener("show.bs.modal", function (event) {
       const card = event.relatedTarget; // Button that triggered the modal
-      selectedItem.item = card.getAttribute("data-bs-item");  // Extract info from data-bs-* attributes
+      selectedItem.item = card.getAttribute("data-bs-item"); // Extract info from data-bs-* attributes
     });
   });
 </script>
@@ -25,117 +26,42 @@
   <!-- Slider main container -->
   <div class="swiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide rounded-pillZ">
-        <div
-          class="row border-4"
-          style="background: linear-gradient(194deg, hsl(166.11deg 100% 97.57%) -2.85%, rgb(181 232 236) 100.86%)"
-        >
-          <div class="col-sm-8">
-            <img class="card-img-bottom img-fluid" src="/sample_med.jpg" />
-          </div>
-          <div class="col-sm-4 d-flex align-self-center">
-            <div class="p-3 me-md-5">
-              <h5 class="card-title">Gabadron-Plus</h5>
-              <h6 class="text-body-secondary">Pregabaline 75 mg, Nortriptyline Hydrochloride 10mg</h6>
-              <p class="card-text text-body-secondary small">
-                Neuropathic Pain Associated with Spondylitis, Arthritis, Sciatica Diabetic Neuropathy, Peripherial
-                Neuropathy, Drug Induced Neuropathy
-              </p>
-              <div class="text-center">
-                <a
-                  class="stretched-link btn btn-sm btn-success d-inline-block d-lg-none"
-                  data-bs-toggle="modal"
-                  data-bs-target="#productModal"
-                >
-                  Read more
-                </a>
-                <a
-                  data-fslightbox
-                  href="#product"
-                  class="stretched-link btn btn-sm btn-success d-none d-lg-inline-block"
-                  data-class="lightbox-on"
-                >
-                  Read more
-                </a>
+      {#each startMed as med}
+        <div class="swiper-slide rounded-pillZ">
+          <div
+            class="row border-4"
+            style="background: linear-gradient(194deg, hsl(166.11deg 100% 97.57%) -2.85%, rgb(181 232 236) 100.86%)"
+          >
+            <div class="col-sm-8">
+              <img class="card-img-bottom img-fluid" src="./{med.Item}_med.jpeg" />
+            </div>
+            <div class="col-sm-4 d-flex align-self-center">
+              <div class="p-3 me-md-5">
+                <h5 class="card-title">{med.Name}</h5>
+                <h6 class="text-body-secondary">{med.Composition}</h6>
+                <p class="card-text text-body-secondary small">
+                  {med.KeyPoint}
+                </p>
+                <div class="text-center">
+                  <a
+                    class="btn stretched-link btn-outline-success p-0 pe-2 rounded-2 text-nowrap"
+                    data-bs-toggle="modal"
+                    data-bs-target="#productModal"
+                    data-bs-item={med.Item}
+                  >
+                    <span
+                      class="d-inline-block position-relative start-0 bg-black bg-opacity-25 rounded-start-2 py-1 px-2"
+                    >
+                      <i class="fa fa-arrow-right"></i>
+                    </span>
+                    &nbsp; Read more
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="swiper-slide rounded-pillZ">
-        <div
-          class="row border-4"
-          style="background: linear-gradient(194deg, hsl(166.11deg 100% 97.57%) -2.85%, rgb(181 232 236) 100.86%)"
-        >
-          <div class="col-sm-8">
-            <img class="card-img-bottom img-fluid" src="/sample_med.jpg" style="transform: rotate(-180deg)" />
-          </div>
-          <div class="col-sm-4 d-flex align-self-center">
-            <div class="p-3">
-              <h5 class="card-title">Gabadron-Plus</h5>
-              <h6 class="text-body-secondary">Pregabaline 75 mg, Nortriptyline Hydrochloride 10mg</h6>
-              <p class="card-text text-body-secondary small">
-                Neuropathic Pain Associated with Spondylitis, Arthritis, Sciatica Diabetic Neuropathy, Peripherial
-                Neuropathy, Drug Induced Neuropathy
-              </p>
-              <div class="text-center">
-                <a
-                  class="stretched-link btn btn-sm btn-success d-inline-block d-lg-none"
-                  data-bs-toggle="modal"
-                  data-bs-target="#productModal"
-                >
-                  Read more
-                </a>
-                <a
-                  data-fslightbox
-                  href="#product"
-                  class="stretched-link btn btn-sm btn-success d-none d-lg-inline-block"
-                  data-class="lightbox-on"
-                >
-                  Read more
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide rounded-pillZ">
-        <div
-          class="row border-4"
-          style="background: linear-gradient(194deg, hsl(166.11deg 100% 97.57%) -2.85%, rgb(181 232 236) 100.86%)"
-        >
-          <div class="col-sm-8">
-            <img class="card-img-bottom img-fluid" src="/sample_med.jpg" style="transform: rotate(-180deg)" />
-          </div>
-          <div class="col-sm-4 d-flex align-self-center">
-            <div class="p-3">
-              <h5 class="card-title">Gabadron-Plus</h5>
-              <h6 class="text-body-secondary">Pregabaline 75 mg, Nortriptyline Hydrochloride 10mg</h6>
-              <p class="card-text text-body-secondary small">
-                Neuropathic Pain Associated with Spondylitis, Arthritis, Sciatica Diabetic Neuropathy, Peripherial
-                Neuropathy, Drug Induced Neuropathy
-              </p>
-              <div class="text-center">
-                <a
-                  class="stretched-link btn btn-sm btn-success d-inline-block d-lg-none"
-                  data-bs-toggle="modal"
-                  data-bs-target="#productModal"
-                >
-                  Read more
-                </a>
-                <a
-                  data-fslightbox
-                  href="#product"
-                  class="stretched-link btn btn-sm btn-success d-none d-lg-inline-block"
-                  data-class="lightbox-on"
-                >
-                  Read more
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/each}
     </div>
     <div class="swiper-pagination"></div>
     <div class="swiper-button-prev text-dark-emphasis"></div>
@@ -176,7 +102,7 @@
                 class="btn stretched-link btn-outline-success p-0 pe-2 rounded-2 text-nowrap"
                 data-bs-toggle="modal"
                 data-bs-target="#productModal"
-                data-bs-item="{med.Item}"
+                data-bs-item={med.Item}
               >
                 <span class="d-inline-block position-relative start-0 bg-black bg-opacity-25 rounded-start-2 py-1 px-2">
                   <i class="fa fa-arrow-right"></i>
