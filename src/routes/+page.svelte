@@ -6,7 +6,7 @@
   import scriptSrc2 from "wowjs/dist/wow.js?url";
 
   const startMed = medList.filter((m) => m.Item < 5);
-  onMount(() => {
+  onMount(async() =>  {
     main.setupSwiper();
 
     console.log(medList);
@@ -17,7 +17,8 @@
       selectedItem.item = card.getAttribute("data-bs-item"); // Extract info from data-bs-* attributes
     });
 
-    new WOW({ live: false, animateClass: "animate__animated" }).init();
+    const { WOW } = await import("wowjs");
+    new WOW({ live: false, animateClass: "animate__animated" }).init(); 
   });
 
 
