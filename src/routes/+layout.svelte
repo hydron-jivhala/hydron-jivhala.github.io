@@ -19,7 +19,7 @@
 
   onMount(async () => {
      //const { doThing } = await import("wowjs");
-      new WOW({ live: false, animateClass: "animate__animated" }).init();
+     // new WOW({ live: false, animateClass: "animate__animated" }).init();
     setTimeout(() => {
       //new WOW.WOW({ live: false, animateClass: "animate__animated" }).init();
     }, 1111);
