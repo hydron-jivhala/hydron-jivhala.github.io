@@ -17,8 +17,8 @@
       selectedItem.item = card.getAttribute("data-bs-item"); // Extract info from data-bs-* attributes
     });
 
-    const { WOW } = await import("wowjs");
-    new WOW({ live: false, animateClass: "animate__animated" }).init(); 
+   // const { WOW } = await import("wowjs");
+  new WOW({ live: false, animateClass: "animate__animated" }).init(); 
   });
 
 
@@ -26,7 +26,7 @@
 </script>
 
 <svelte:head>
-  <script src={scriptSrc2}></script>
+  <!-- <script src={scriptSrc2}></script> -->
 </svelte:head>
 
 <Hero></Hero>

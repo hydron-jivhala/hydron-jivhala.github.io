@@ -1,5 +1,5 @@
-  export let selectedItem = $state({
-  item : 1
+export let selectedItem = $state({
+  item: 1,
 });
 
 export const medList = [
@@ -106,7 +106,7 @@ export const medList = [
   {
     Item: 7,
     Name: "HYDFLAM MR Tab",
-    Composition: ["Thiocolchicoside 4mg", "Aceclofenac 100mg Tablet"],
+    Composition: ["Thiocolchicoside 4mg", "Aceclofenac 100mg"],
     KeyPoint: [
       "Low back pain",
       "Neck pain",
@@ -132,7 +132,7 @@ export const medList = [
   {
     Item: 9,
     Name: "MLukTab",
-    Composition: ["Montelukast sodium 10mg & levocetirizine dihydrochloride 5mg Tablet"],
+    Composition: ["Montelukast sodium 10mg", "levocetirizine dihydrochloride 5mg"],
     KeyPoint: [
       "Allergic rhinitis",
       "Asthma & Bronchitis",
@@ -159,7 +159,7 @@ export const medList = [
   {
     Item: 11,
     Name: "MlukCOLD Tab",
-    Composition: ["Phenylephrine Hcl 10mg", "Chlorpheniramine Maleate 2 mg & Paracelamol 500 mg Tablet"],
+    Composition: ["Phenylephrine Hcl 10mg", "Chlorpheniramine Maleate 2 mg", "Paracelamol 500 mg"],
     KeyPoint: [
       "Allergic rhinitis",
       "Bronchitis",
@@ -201,7 +201,7 @@ export const medList = [
   {
     Item: 14,
     Name: "Defth 6",
-    Composition: ["Deflazacort 6 mg Tablet"],
+    Composition: ["Deflazacort 6 mg "],
     KeyPoint: ["Asthma and Bronchitis", "Chronic Arthritis", "Hypersensitivity Reaction"],
   },
   {
@@ -276,7 +276,7 @@ export const medList = [
   {
     Item: 20,
     Name: "Azyron - 250 Tab",
-    Composition: ["Azithromycin 250 Tablet"],
+    Composition: ["Azithromycin 250 "],
     KeyPoint: [
       "Pneumonia",
       "Pharyngitis & Laryngitis",
@@ -290,7 +290,7 @@ export const medList = [
   {
     Item: 21,
     Name: "Azyron - 500 Tab",
-    Composition: ["Azithromycin 500 Tablet"],
+    Composition: ["Azithromycin 500 "],
     KeyPoint: [
       "Pneumonia",
       "Pharyngitis & Laryngitis",
@@ -323,7 +323,7 @@ export const medList = [
   {
     Item: 24,
     Name: "Hydpan 40 Tab",
-    Composition: ["Pantoprazole 40mg tablet"],
+    Composition: ["Pantoprazole 40mg "],
     KeyPoint: [
       "Drug-Induced Gastritis",
       "Reflux Oesophagitis",
@@ -353,7 +353,7 @@ export const medList = [
   {
     Item: 27,
     Name: "Hydrab-20",
-    Composition: ["Rabeprazole Sodium 20mg tablet"],
+    Composition: ["Rabeprazole Sodium 20mg "],
     KeyPoint: [
       "Drug-Induced Gastritis",
       "Reflux Oesophagitis",
@@ -377,13 +377,13 @@ export const medList = [
   {
     Item: 29,
     Name: "DOLOAID-P Tab",
-    Composition: ["Aceclofenac 100mg", "Paracetamol 325mg Tablets"],
+    Composition: ["Aceclofenac 100mg", "Paracetamol 325mg "],
     KeyPoint: ["Lower back pain", "Fever and body pain", "Sport injury", "Acure Dental pain"],
   },
   {
     Item: 30,
     Name: "Karboz Tab",
-    Composition: ["Ofloxacin 200 mg", "Ornidazole 500 mg Tablets"],
+    Composition: ["Ofloxacin 200 mg", "Ornidazole 500 mg"],
     KeyPoint: [
       "Diarrhoea and Dysentery",
       "Post MTP",

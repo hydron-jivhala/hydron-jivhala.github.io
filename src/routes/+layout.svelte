@@ -1,9 +1,15 @@
 <script>
   import { onMount } from "svelte";
   import * as main from "../lib/main.js";
-  import scriptSrc from "bootstrap/dist/js/bootstrap.bundle.min.js?url";
   import scriptSrc2 from "wowjs/dist/wow.js?url";
   import Product from "./Product.svelte";
+
+  /*import scriptSrc from "bootstrap/dist/js/bootstrap.bundle.min.js?url";
+  import * as bsModal  from 'bootstrap/dist/js/bootstrap.bundle.min.js?client' */
+  import * as bsModal from "bootstrap/js/dist/modal.js?client";
+  //import * as wow from "wowjs/dist/wow.js?client";
+  //import WOW from 'wowjs?client';
+
 
   /*    import "/style.scss";   */
   /*  import { Tooltip, Toast, Popover } from 'bootstrap'; */
@@ -11,26 +17,30 @@
 
   let { children } = $props();
 
-  onMount(() => {
+  onMount(async () => {
+     //const { doThing } = await import("wowjs");
+      new WOW({ live: false, animateClass: "animate__animated" }).init();
+    setTimeout(() => {
+      //new WOW.WOW({ live: false, animateClass: "animate__animated" }).init();
+    }, 1111);
     main.setupScrollBtn();
-    new WOW({ live: false, animateClass: "animate__animated" }).init();
   });
 </script>
 
 <svelte:head>
-  <script src={scriptSrc}></script>
-  <script src={scriptSrc2}></script>
+  <!--   <script src={scriptSrc}></script> -->
+  <script src={scriptSrc2}></script>  
   <!-- <link href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" /> -->
 
-
   <title>Hydron Healthcare Pvt. Ltd.</title>
-  <meta name="description" content="Hydron Medical products and Jivhala Masale">
-
+  <meta name="description" content="Hydron Medical products and Jivhala Masale" />
 </svelte:head>
 
 <nav class="navbar navbar-expand-sm fixed-top p-0 shadow bg-secondary">
   <div class="container-xl">
-    <a class="navbar-brand rounded-pill" href="./"> <img id="logo" style="height: 5rem" src="./hydron_logo.png" alt="Hydron" /></a>
+    <a class="navbar-brand rounded-pill" href="./">
+      <img id="logo" style="height: 5rem" src="./hydron_logo.png" alt="Hydron" /></a
+    >
     <button
       class="navbar-toggler"
       type="button"
