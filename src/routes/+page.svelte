@@ -15,7 +15,7 @@
       selectedItem.item = card.getAttribute("data-bs-item"); // Extract info from data-bs-* attributes
     });
 
-    new WOW({ live: false, animateClass: "animate__animated" }).init();
+    //new WOW({ live: false, animateClass: "animate__animated" }).init();
   });
 </script>
 
