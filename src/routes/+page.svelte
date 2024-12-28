@@ -6,10 +6,8 @@
   import scriptSrc2 from "wowjs/dist/wow.js?url";
 
   const startMed = medList.filter((m) => m.Item < 5);
-  onMount(async() =>  {
+  onMount(() => {
     main.setupSwiper();
-
-    console.log(medList);
 
     const myModal = document.getElementById("productModal");
     myModal.addEventListener("show.bs.modal", function (event) {
@@ -17,12 +15,8 @@
       selectedItem.item = card.getAttribute("data-bs-item"); // Extract info from data-bs-* attributes
     });
 
-   // const { WOW } = await import("wowjs");
-  new WOW({ live: false, animateClass: "animate__animated" }).init(); 
+    new WOW({ live: false, animateClass: "animate__animated" }).init();
   });
-
-
-
 </script>
 
 <svelte:head>
