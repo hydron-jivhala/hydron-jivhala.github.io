@@ -6,7 +6,7 @@
 
   onMount(() => {
     main.setupSwiper();
-    new WOW({ live: false, animateClass: "animate__animated" }).init();
+    //new WOW({ live: false, animateClass: "animate__animated" }).init();
   });
 </script>
 
