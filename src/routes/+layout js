@@ -1,5 +1,5 @@
 export const ssr = false;
-export const prerender = false;
+export const prerender = true;
 
 // import function to register Swiper custom elements
 import { register } from 'swiper/element/bundle';
