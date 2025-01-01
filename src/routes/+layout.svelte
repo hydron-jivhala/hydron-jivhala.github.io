@@ -4,10 +4,10 @@
   import scriptSrc2 from "wowjs/dist/wow.js?url";
   import Product from "./Product.svelte";
 
-  import scriptSrc from "bootstrap/dist/js/bootstrap.bundle.min.js?client";
-/*  import * as collapse from "bootstrap/js/dist/collapse.js?client";
- import * as bsModal2 from "bootstrap/js/dist/modal.js?client"; */
- 
+  import { page } from "$app/state";
+  // import scriptSrc from "bootstrap/dist/js/bootstrap.bundle.min.js?client";
+  import * as collapse from "bootstrap/js/dist/collapse.js?client";
+  import * as bsModal2 from "bootstrap/js/dist/modal.js?client";
 
   //import * as wow from "wowjs/dist/wow.js?client";
   //import WOW from 'wowjs?client';
@@ -19,21 +19,21 @@
   let { children } = $props();
 
   onMount(async () => {
-     //const { doThing } = await import("wowjs");
-     // new WOW({ live: false, animateClass: "animate__animated" }).init();
+    //const { doThing } = await import("wowjs");
+    // new WOW({ live: false, animateClass: "animate__animated" }).init();
     setTimeout(() => {
       //new WOW.WOW({ live: false, animateClass: "animate__animated" }).init();
     }, 1111);
 
-      const { bsModal } = await import("bootstrap/js/dist/Popover.js"); 
-
     main.setupScrollBtn();
+
+    console.log(page.url.pathname);
   });
 </script>
 
 <svelte:head>
   <!--   <script src={scriptSrc}></script> -->
-  <script src={scriptSrc2}></script>  
+  <script src={scriptSrc2}></script>
   <!-- <link href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" /> -->
 
   <title>Hydron Healthcare Pvt. Ltd.</title>
@@ -58,17 +58,33 @@
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item ">
-          <a class="nav-link btn btn-outline-secondary rounded-pill fw-semibold" href="./">Hydron</a>
+        <li class="nav-item">
+          <a
+            class="nav-link btn btn-outline-secondary rounded-pill fw-semibold active"
+            class:active={page.url.pathname == "/"}
+            href="./">Hydron</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link btn btn-outline-secondary rounded-pill fw-semibold" href="./spices">Jivala Masale</a>
+          <a
+            class="nav-link btn btn-outline-secondary rounded-pill fw-semibold"
+            class:active={page.url.pathname.includes("spices")}
+            href="./spices">Jivala Masale</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link btn btn-outline-secondary rounded-pill fw-semibold" href="./contact">Contact Us</a>
+          <a
+            class="nav-link btn btn-outline-secondary rounded-pill fw-semibold"
+            class:active={page.url.pathname.includes("contact")}
+            href="./contact">Contact Us</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link btn btn-outline-secondary rounded-pill fw-semibold" href="./about">About Us</a>
+          <a
+            class="nav-link btn btn-outline-secondary rounded-pill fw-semibold"
+            class:active={page.url.pathname.includes("about")}
+            href="./about">About Us</a
+          >
         </li>
       </ul>
     </div>

@@ -8,7 +8,7 @@
 
   onMount(() => {
     main.setupSwiper();
-    // new WOW({ live: false, animateClass: "animate__animated" }).init();
+    //new WOW({ live: false, animateClass: "animate__animated" }).init();
   });
 </script>
 
@@ -37,7 +37,7 @@
               <img
                 src="./{prod.Item}_med.jpeg"
                 alt=""
-                class="img-fluid shadow-lg rounded-2"
+                class="img-fluid shadow-lg rounded-2 wow animate__fadeInLeftBig"
                 style="transform:scale(1.4);"
               />
             </div>

@@ -13,6 +13,8 @@
     myModal.addEventListener("show.bs.modal", function (event) {
       const card = event.relatedTarget; // Button that triggered the modal
       selectedItem.item = card.getAttribute("data-bs-item"); // Extract info from data-bs-* attributes
+
+      //new WOW({ live: false, animateClass: "animate__animated" }).init();
     });
 
     //new WOW({ live: false, animateClass: "animate__animated" }).init();
