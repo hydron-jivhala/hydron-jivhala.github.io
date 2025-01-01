@@ -54,7 +54,7 @@
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
+        <li class="nav-item ">
           <a class="nav-link btn btn-outline-secondary rounded-pill fw-semibold" href="./">Hydron</a>
         </li>
         <li class="nav-item">
