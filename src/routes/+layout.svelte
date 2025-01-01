@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import * as main from "../lib/main.js";
-/*   import wowJsSrc from "wowjs/dist/wow.js?url"; */
+  import wowJsSrc from "wowjs/dist/wow.js?url";
   import Product from "./Product.svelte";
 
   import { page } from "$app/state";
@@ -20,29 +20,19 @@
 
   onMount(async () => {
     //const { doThing } = await import("wowjs");
-
-setTimeout(() => {
-  //main.wwww();
-    new WOW({ live: false, animateClass: "animate__animated111" }).init();
-}, 2111);
-    
     setTimeout(() => {
-      //new WOW.WOW({ live: false, animateClass: "animate__animated" }).init();
-    }, 1111);
+      //new WOW({ live: false, animateClass: "animate__animated111" }).init();
+    }, 2111);
 
     main.setupScrollBtn();
-
     console.log(page.url.pathname);
   });
 </script>
 
 <svelte:head>
   <!--   <script src={scriptSrc}></script> -->
-<!--   <script src={wowJsSrc}></script> -->
+  <script src={wowJsSrc}></script>
   <!-- <link href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" /> -->
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
-
 
   <title>Hydron Healthcare Pvt. Ltd.</title>
   <meta name="description" content="Hydron Medical products and Jivhala Masale" />
