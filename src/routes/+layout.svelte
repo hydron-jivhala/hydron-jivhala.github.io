@@ -6,7 +6,7 @@
 
   /*import scriptSrc from "bootstrap/dist/js/bootstrap.bundle.min.js?url";
   import * as bsModal  from 'bootstrap/dist/js/bootstrap.bundle.min.js?client' */
-  import * as bsModal from "bootstrap/js/dist/modal.js?client";
+  //import * as bsModal from "bootstrap/js/dist/modal.js?client";
   //import * as wow from "wowjs/dist/wow.js?client";
   //import WOW from 'wowjs?client';
 
@@ -23,6 +23,11 @@
     setTimeout(() => {
       //new WOW.WOW({ live: false, animateClass: "animate__animated" }).init();
     }, 1111);
+
+
+    const { bsModal } = await import("bootstrap/js/dist/modal.js");
+
+
     main.setupScrollBtn();
   });
 </script>
