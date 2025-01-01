@@ -4,12 +4,13 @@
   import scriptSrc2 from "wowjs/dist/wow.js?url";
   import Product from "./Product.svelte";
 
-  /*import scriptSrc from "bootstrap/dist/js/bootstrap.bundle.min.js?url";
-  import * as bsModal  from 'bootstrap/dist/js/bootstrap.bundle.min.js?client' */
-  //import * as bsModal from "bootstrap/js/dist/modal.js?client";
+  import scriptSrc from "bootstrap/dist/js/bootstrap.bundle.min.js?client";
+/*  import * as collapse from "bootstrap/js/dist/collapse.js?client";
+ import * as bsModal2 from "bootstrap/js/dist/modal.js?client"; */
+ 
+
   //import * as wow from "wowjs/dist/wow.js?client";
   //import WOW from 'wowjs?client';
-
 
   /*    import "/style.scss";   */
   /*  import { Tooltip, Toast, Popover } from 'bootstrap'; */
@@ -24,9 +25,7 @@
       //new WOW.WOW({ live: false, animateClass: "animate__animated" }).init();
     }, 1111);
 
-
-    const { bsModal } = await import("bootstrap/js/dist/modal.js");
-
+      const { bsModal } = await import("bootstrap/js/dist/Popover.js"); 
 
     main.setupScrollBtn();
   });
