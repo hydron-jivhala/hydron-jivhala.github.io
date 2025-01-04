@@ -18,10 +18,10 @@
 
   let { children } = $props();
   onMount(async () => {
-    setTimeout(() => {
+    /* setTimeout(() => {
       console.log("in _layout svlete " + page.url.pathname);
       new WOW({ live: false, animateClass: "animate__animated" }).init();
-    }, 100);
+    }, 100); */
 
     main.setupScrollBtn();
   });

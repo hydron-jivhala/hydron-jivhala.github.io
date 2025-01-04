@@ -19,7 +19,7 @@
     setTimeout(() => {
       console.log("in page.svelete setTimeout");
       wowLoaded = true;
-      //new WOW({ live: false, animateClass: "animate__animated" }).init();
+      new WOW({ live: false, animateClass: "animate__animated" }).init();
     }, 100);
     console.log("in page.svelete");
     //new WOW({ live: false, animateClass: "animate__animated" }).init();
