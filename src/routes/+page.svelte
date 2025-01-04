@@ -16,7 +16,7 @@
 
       //new WOW({ live: false, animateClass: "animate__animated" }).init();
     });
-    console.log("in page.svelete" + page.url.pathname);
+    console.log("in page.svelete" );
     new WOW({ live: false, animateClass: "animate__animated" }).init();
   });
 </script>
