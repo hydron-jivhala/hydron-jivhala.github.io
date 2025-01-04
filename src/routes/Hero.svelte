@@ -6,7 +6,8 @@
 
   onMount(() => {
     main.setupSwiper();
-    //new WOW({ live: false, animateClass: "animate__animated" }).init();
+    console.log("in hero.svelete setTimeout");
+    new WOW({ live: false, animateClass: "animate__animated" }).init();
   });
 </script>
 
