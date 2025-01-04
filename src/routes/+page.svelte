@@ -18,8 +18,10 @@
 
     setTimeout(() => {
       console.log("in page.svelete setTimeout");
+      wowLoaded = true;
       new WOW({ live: false, animateClass: "animate__animated" }).init();
-    }, 500);
+
+    }, 100);
     console.log("in page.svelete");
     //new WOW({ live: false, animateClass: "animate__animated" }).init();
   });
@@ -29,11 +31,10 @@
   <script src={scriptSrc2}></script>
 </svelte:head>
 
-<Hero></Hero>
+  <Hero></Hero>
 
-<div class="container-xl my-5 pt-3">
+<div class="container-xl my-5 pt-3"  >
   <div class="display-5 my-5 text-center text-info-emphasis fw-bold">Our Popular Star Products</div>
-
   <!-- Slider main container -->
   <div class="swiper">
     <div class="swiper-wrapper">
