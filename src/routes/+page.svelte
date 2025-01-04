@@ -19,7 +19,7 @@
     setTimeout(() => {
       console.log("in page.svelete setTimeout");
       new WOW({ live: false, animateClass: "animate__animated" }).init();
-    });
+    }, 5000);
     console.log("in page.svelete");
     //new WOW({ live: false, animateClass: "animate__animated" }).init();
   });
