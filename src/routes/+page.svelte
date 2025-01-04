@@ -13,22 +13,19 @@
     myModal.addEventListener("show.bs.modal", function (event) {
       const card = event.relatedTarget; // Button that triggered the modal
       selectedItem.item = card.getAttribute("data-bs-item"); // Extract info from data-bs-* attributes
-      
-     
     });
 
     setTimeout(() => {
-      console.log("in page.svelete setTimeout" );
+      console.log("in page.svelete setTimeout");
       new WOW({ live: false, animateClass: "animate__animated" }).init();
-
     });
-    console.log("in page.svelete" );
+    console.log("in page.svelete");
     //new WOW({ live: false, animateClass: "animate__animated" }).init();
   });
 </script>
 
 <svelte:head>
-  <!-- <script src={scriptSrc2}></script> -->
+  <script src={scriptSrc2}></script>
 </svelte:head>
 
 <Hero></Hero>

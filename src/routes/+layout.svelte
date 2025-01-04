@@ -26,7 +26,7 @@
 
     main.setupScrollBtn();
     console.log(page.url.pathname);
-    new WOW({ live: false, animateClass: "animate__animated" }).init();
+    //new WOW({ live: false, animateClass: "animate__animated" }).init();
   });
 </script>
 
