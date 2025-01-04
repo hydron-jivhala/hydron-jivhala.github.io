@@ -4,10 +4,17 @@
 
   let { prod = {} } = $props();
 
+  let  wowLoaded = $state(false);
   onMount(() => {
     main.setupSwiper();
     console.log("in hero.svelete setTimeout");
     //new WOW({ live: false, animateClass: "animate__animated" }).init();
+
+    setTimeout(() => {
+      console.log("in hero.svelete setTimeout");
+      wowLoaded = true;
+      //new WOW({ live: false, animateClass: "animate__animated" }).init();
+    }, 100);
   });
 </script>
 
@@ -26,6 +33,7 @@
       <div class="features">
         <h4 class="text-center mt-5 px-5 opacity-75">Our Associated Manufacturing Plant :</h4>
         <div class="d-flex justify-content-center pb-5">
+          {#if wowLoaded}
           <ul class="list-unstyled list-group list-group-flush">
             <li
               class="fw-semibold list-group-item text-white rounded-pill px-3 px-sm-5 py-3 wow animate__bounceInLeft"
@@ -58,6 +66,7 @@
               <i class="fa fa-check fa-1x fw-bold pe-3"></i>W.H.O., GMP guidelines compliant
             </li>
           </ul>
+          {/if}
         </div>
       </div>
     </div>

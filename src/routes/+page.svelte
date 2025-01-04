@@ -3,7 +3,7 @@
   import * as main from "../lib/main.js";
   import Hero from "./Hero.svelte";
   import { selectedItem, medList } from "./data.svelte.js";
-  import scriptSrc2 from "wowjs/dist/wow.js?url";
+/*   import scriptSrc2 from "wowjs/dist/wow.js?url"; */
 
   const startMed = medList.filter((m) => m.Item < 5);
   let wowLoaded = false;
@@ -19,8 +19,7 @@
     setTimeout(() => {
       console.log("in page.svelete setTimeout");
       wowLoaded = true;
-      new WOW({ live: false, animateClass: "animate__animated" }).init();
-
+      //new WOW({ live: false, animateClass: "animate__animated" }).init();
     }, 100);
     console.log("in page.svelete");
     //new WOW({ live: false, animateClass: "animate__animated" }).init();
@@ -28,7 +27,7 @@
 </script>
 
 <svelte:head>
-  <script src={scriptSrc2}></script>
+  <!-- <script src={scriptSrc2}></script> -->
 </svelte:head>
 
   <Hero></Hero>
