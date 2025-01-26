@@ -4,6 +4,7 @@
 
   onMount(() => {
     main.setupSwiper();
+    main.setupStickyNavBar(true);
   });
 </script>
   

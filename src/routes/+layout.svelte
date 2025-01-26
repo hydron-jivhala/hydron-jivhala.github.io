@@ -22,7 +22,6 @@
       console.log("in _layout svlete " + page.url.pathname);
       new WOW({ live: false, animateClass: "animate__animated" }).init();
     }, 100); */
-
     main.setupScrollBtn();
   });
 </script>
@@ -40,51 +39,30 @@
   </script>
 </svelte:head>
 
-<nav class="navbar navbar-expand-sm fixed-top p-0 shadow bg-secondary">
-  <div class="container-xl">
-    <a class="navbar-brand rounded-pill" href="./">
-      <img id="logo" style="height: 5rem" src="./hydron_logo.png" alt="Hydron" /></a
-    >
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a
+<nav class="navbar navbar-expand fixed-top p-0 shadow-lg bg-secondaryZ"  class:sticky-nav={page.url.pathname == "/"}>
+  <div class="container-fluid">
+    
+    <div class="collapseZ navbar-collapse " id="navbarNavAltMarkup">
+      <ul class="navbar-nav w-100 justify-content-evenly ">
+        <li class="nav-item ">
+          <a class="navbar-brand rounded-pill" href="./" class:active={page.url.pathname == "/"}>
+            <img id="logo" class="img-fluid p-sm-1 " src="./h_logo4.png" alt="Hydron" /></a
+          >
+          <!-- <a  mx-auto  
             class="nav-link btn btn-outline-secondary rounded-pill fw-semibold active"
             class:active={page.url.pathname == "/"}
             href="./">Hydron</a
-          >
+          > -->
         </li>
-        <li class="nav-item">
-          <a
+        <li class="nav-item  ">
+          <a class="navbar-brand rounded-pill" class:active={page.url.pathname.includes("spices")} href="./spices">
+            <img id="logo" class="img-fluid p-sm-1"     src="./j_logo2.png" alt="Jivhala Masale" /></a
+          >
+          <!-- <a
             class="nav-link btn btn-outline-secondary rounded-pill fw-semibold"
             class:active={page.url.pathname.includes("spices")}
             href="./spices">Jivala Masale</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link btn btn-outline-secondary rounded-pill fw-semibold"
-            class:active={page.url.pathname.includes("contact")}
-            href="./contact">Contact Us</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link btn btn-outline-secondary rounded-pill fw-semibold"
-            class:active={page.url.pathname.includes("about")}
-            href="./about">About Us</a
-          >
+          > -->
         </li>
       </ul>
     </div>
@@ -142,7 +120,7 @@
           <h5 class="opacity-75">Quick Links</h5>
           <div class="vstack gap-1 link-underline-opacity-75-hover">
             <a class="link-dark fw-semibold" href="./"><i class="fa fa-home me-2"></i>Home</a>
-            <a class="link-dark fw-semibold" href="./"><i class="fa fa-rectangle-list me-2"></i>Products</a>
+            <a class="link-dark fw-semibold" href="./#exploreAll"><i class="fa fa-rectangle-list me-2"></i>Products</a>
             <a class="link-dark fw-semibold" href="./spices"><i class="fa fa-mortar-pestle me-2"></i>Jivala Masale</a>
             <a class="link-dark fw-semibold" href="./media"><i class="fa fa-photo-film me-2"></i>Media</a>
           </div>
@@ -151,7 +129,7 @@
           <h5 class="opacity-75">We want to hear from you.</h5>
           <div class="vstack gap-1 link-underline-opacity-75-hover">
             <a class="link-dark fw-semibold" href="./contact"><i class="fa fa-address-card me-2"></i>Contact Us</a>
-            <a class="link-dark fw-semibold" href=""><i class="fa fa-people-roof me-2"></i>About Us</a>
+            <a class="link-dark fw-semibold" href="./about"><i class="fa fa-people-roof me-2"></i>About Us</a>
             <!-- <a class="link-dark fw-semibold" href=""><i class="fa fa-comments me-2"></i>Feedback</a> -->
           </div>
         </div>

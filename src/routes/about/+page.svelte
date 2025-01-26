@@ -4,6 +4,7 @@
 
   onMount(() => {
     main.setupSwiper();
+    main.setupStickyNavBar(true);
     new WOW({ live: false, animateClass: "animate__animated" }).init();
   });
 </script>

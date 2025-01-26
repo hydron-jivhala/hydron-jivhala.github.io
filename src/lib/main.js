@@ -24,10 +24,10 @@ export function setupScrollBtn() {
   window.addEventListener("scroll", () => {
     //if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
     if (window.scrollY >= 70) {
-      navBar.classList.add("sticky-nav");
+      //navBar.classList.add("sticky-nav");
       goUpBtn.style.display = "block";
     } else {
-      navBar.classList.remove("sticky-nav");
+      //navBar.classList.remove("sticky-nav");
       goUpBtn.style.display = "none";
     }
   });
@@ -37,6 +37,25 @@ export function setupScrollBtn() {
   });
 }
 
+export function setupStickyNavBar(always) {
+  const navBar = document.querySelector(".navbar");
+  if (always) {
+    navBar.classList.add("sticky-nav");
+    window.removeEventListener("scroll", scrollNav);
+  } else {
+    navBar.classList.remove("sticky-nav");
+    window.addEventListener("scroll", scrollNav);
+  }
+}
+function scrollNav() {
+  const navBar = document.querySelector(".navbar");
+  //if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+  if (window.scrollY >= 70) {
+    navBar.classList.add("sticky-nav");
+  } else {
+    navBar.classList.remove("sticky-nav");
+  }
+}
 export function setupSwiper() {
   const swiper = new Swiper(".swiper", {
     //direction: "vertical",

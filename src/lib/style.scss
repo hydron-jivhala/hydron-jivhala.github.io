@@ -35,7 +35,6 @@ $font-family-sans-serif: "Open Sans", "Hind", "Poppins", system-ui, -apple-syste
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 @import "../../node_modules/animate.css/animate.min.css";
 
-
 /* 
 @import "node_modules/animate.css/animate.min.css";*/
 :root {
@@ -48,24 +47,30 @@ html {
 }
 
 .body {
-  background: linear-gradient(113deg, #00c9ff5c 0%, #ffaa103b 100%) !important;
+  background: linear-gradient(98deg, #00c9ff5c 0%, #ffaa103b 100%) !important;
 }
 
 nav.navbar {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-image: linear-gradient(273deg, #af5c02 0%, #a71469 65%, #368893 100%);
+
+  img {
+    /* padding: 1rem !important; */
+  }
 }
-.sticky-nav {
-  background-color: $secondary;
+
+nav.navbar.sticky-nav {
+  /* background-color: $secondary; */
   opacity: 0.95;
-  a {
+  /* a {
     padding: 0 auto !important;
   }
   a:hover {
     background-color: $light !important;
-  }
+  } */
   img {
-    padding: 0 !important;
-    height: 3rem !important;
+    /* padding: 0.5rem !important; */
+    height: 4rem !important;
   }
 }
 
@@ -89,6 +94,12 @@ nav.navbar {
 
 .header-spices {
   /* min-height: 100vh; */
+
+  /* background: linear-gradient(to bottom right, rgba(100, 65, 44, 0.664), rgba(0, 0, 0, 0.651)),
+  url(/hydron_logo.png) right top no-repeat, 
+  linear-gradient(to bottom right, rgba(100, 65, 44, 0.664), rgba(0, 0, 0, 0.651)),
+  url("/spices.jpg") center center no-repeat ; */
+
   background: linear-gradient(to bottom right, rgba(100, 65, 44, 0.664), rgba(0, 0, 0, 0.651)),
     url("/spices.jpg") center center no-repeat;
   background-size: cover;
@@ -98,7 +109,7 @@ nav.navbar {
     text-shadow: 0px 2px 2px rgba(176, 185, 183, 0.4);
   }
   .features .card {
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
   }
 }
 

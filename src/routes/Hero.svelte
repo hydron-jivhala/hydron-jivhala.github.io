@@ -18,7 +18,7 @@
   });
 </script>
 
-<header class="header py-8 shadow-lg">
+<header class="header py-8 shadow-lg mt-8">
   <div class="container rounded-3">
     <div class="row">
       <!-- style="background: linear-gradient(127deg, rgba(59, 232, 238, 0.884) 33.86%, hsl(275deg 14.1% 77.49% / 36%) 92.85%)" -->

@@ -3,18 +3,31 @@
   import * as main from "../lib/main.js";
   import Hero from "./Hero.svelte";
   import { selectedItem, medList } from "./data.svelte.js";
-/*   import scriptSrc2 from "wowjs/dist/wow.js?url"; */
+  /*   import scriptSrc2 from "wowjs/dist/wow.js?url"; */
 
   const startMed = medList.filter((m) => m.Item < 5);
   let wowLoaded = false;
   onMount(() => {
     main.setupSwiper();
-
+    main.setupStickyNavBar(false);
     const myModal = document.getElementById("productModal");
     myModal.addEventListener("show.bs.modal", function (event) {
       const card = event.relatedTarget; // Button that triggered the modal
       selectedItem.item = card.getAttribute("data-bs-item"); // Extract info from data-bs-* attributes
     });
+
+
+    myModal.addEventListener("shown.bs.modal", function (event) {
+
+      console.log('shown.bs.modalshown.bs.modal');
+     /*  document.querySelectorAll(".modal-content  .wow").forEach((node) => {
+        node.classList.remove("animated");
+        node.removeAttribute("style");
+      }); */
+      //new WOW({ live: false, animateClass: "animate__animated" }).init();
+
+    });
+
 
     setTimeout(() => {
       console.log("in page.svelete setTimeout");
@@ -30,10 +43,10 @@
   <!-- <script src={scriptSrc2}></script> -->
 </svelte:head>
 
-  <Hero></Hero>
+<Hero></Hero>
 
-<div class="container-xl my-5 pt-3"  >
-  <div class="display-5 my-5 text-center text-info-emphasis fw-bold">Our Popular Star Products</div>
+<div class="container-xl my-5 pt-3">
+  <div class="display-5 my-5 text-center text-info-emphasis fw-bold">Our Popular New Launch!!</div>
   <!-- Slider main container -->
   <div class="swiper">
     <div class="swiper-wrapper">
@@ -44,7 +57,7 @@
             style="background: linear-gradient(194deg, hsl(166.11deg 100% 97.57%) -2.85%, rgb(181 232 236) 100.86%)"
           >
             <div class="col-sm-8">
-              <img class="card-img-bottom img-fluid" src="./{med.Item}_med.jpeg" />
+              <img class="card-img-bottom img-fluid" src="./{med.Item}_med.jpg"  />
             </div>
             <div class="col-sm-4 d-flex align-self-center">
               <div class="p-3 me-md-5">
@@ -81,12 +94,12 @@
   </div>
 
   <!-- All Products cards -->
-  <div class="display-6 mt-6 text-center text-info-emphasis fw-bold">Explore All Products</div>
+  <div class="display-6 mt-6 text-center text-info-emphasis fw-bold" id="exploreAll">Explore All Products</div>
   <div class="row mt-4 g-4">
     {#each medList as med, i}
-      <div class="col-sm-6 col-md-4 wow animate__backInUp">
+      <div class="col-sm-6 col-md-4 wow animate__pulse">
         <div class="card shadow">
-          <img class="card-img-top" src="./{med.Item}_med.jpeg" />
+          <img class="card-img-top" src="./{med.Item}_med.jpg"  />
           <div
             class="card-body"
             style="background: linear-gradient(157.59deg, hsla(0, 0%, 100%, 0.1) -2.85%, rgba(87, 67, 143, 0.1) 89.86%)"

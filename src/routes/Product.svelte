@@ -24,7 +24,7 @@
         class="header-prod p-2 rounded-1"
         id="product"
         style="background: linear-gradient(to bottom right, rgba(212, 249, 253, 0.811), rgba(237, 253, 251, 0.859)),
-    url('{prod.Item}_med.jpeg') center center no-repeat;"
+    url('{prod.Item}_med.jpg') center center no-repeat;"
       >
         <div class="container">
           <div class="row d-flex mt-3 gy-3">
@@ -35,7 +35,7 @@
 
             <div class="col-lg-6 h-100 align-self-center text-center">
               <img
-                src="./{prod.Item}_med.jpeg"
+                src="./{prod.Item}_med.jpg"
                 alt=""
                 class="img-fluid shadow-lg rounded-2 wow animate__fadeInLeftBig"
                 style="transform:scale(1.4);"
@@ -95,7 +95,7 @@
   /* .header-prod {
   min-height: 100vh;
   background: linear-gradient(to bottom right, rgba(212, 249, 253, 0.911), rgba(237, 253, 251, 0.959)),
-    url("{prod.Item}_med.jpeg") center center no-repeat;
+    url("{prod.Item}_med.jpg") center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: rgb(41, 0, 39) !important;
