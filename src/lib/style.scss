@@ -15,7 +15,7 @@ $line-height-base: 1.7;
 $input-btn-line-height: 1.5;
 $link-shade-percentage: 40%;
 
-/* $primary: #ffc107; */
+$primary: #5a2869;
 $secondary: #3baeba; /*#3baeba;*/
 $dark: #1a485e;
 
@@ -54,20 +54,25 @@ nav.navbar {
   transition: all 0.3s ease-in-out;
   background-image: linear-gradient(273deg, #af5c02 0%, #a71469 65%, #368893 100%);
 
+  img:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    filter: brightness(1.2);
+  }
+
   img {
+    transition: filter 0.2s ease-in-out;
     /* padding: 1rem !important; */
   }
 }
 
 nav.navbar.sticky-nav {
+  transition: all 0.3s ease-in-out;
   /* background-color: $secondary; */
   opacity: 0.95;
   /* a {
     padding: 0 auto !important;
-  }
-  a:hover {
-    background-color: $light !important;
-  } */
+  }*/
+
   img {
     /* padding: 0.5rem !important; */
     height: 4rem !important;

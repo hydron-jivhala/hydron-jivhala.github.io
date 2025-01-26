@@ -87,7 +87,7 @@ export const medList = [
   },
   {
     Item: 6,
-    Name: "HYDFLAM Tab",
+    Name: "Hydflam Tab",
     Composition: [
       "50,000 Armour units of Enzymatic Activity (Trypsin and Chymotrypsin ratio 6:1)",
       "Diclofenac Potassium B.P. 50mg",
@@ -105,7 +105,7 @@ export const medList = [
   },
   {
     Item: 7,
-    Name: "HYDFLAM MR Tab",
+    Name: "Hydflam MR Tab",
     Composition: ["Thiocolchicoside 4mg", "Aceclofenac 100mg"],
     KeyPoint: [
       "Low back pain",
@@ -118,7 +118,7 @@ export const medList = [
   },
   {
     Item: 8,
-    Name: "HYDFLAM SP Tab",
+    Name: "Hydflam SP Tab",
     Composition: ["Aceclofenac 100mg", "Paracetamol 325mg", "Serratiopeptidase 15mg"],
     KeyPoint: [
       "Easy relief in Fractures",
@@ -131,7 +131,7 @@ export const medList = [
   },
   {
     Item: 9,
-    Name: "MLukTab",
+    Name: "MLuk Tab",
     Composition: ["Montelukast sodium 10mg", "levocetirizine dihydrochloride 5mg"],
     KeyPoint: [
       "Allergic rhinitis",
@@ -145,7 +145,7 @@ export const medList = [
   },
   {
     Item: 10,
-    Name: "MLukAF Tab",
+    Name: "MLuk-AF Tab",
     Composition: ["Montelukast 10mg", "Fexofenadine 120mg", "Acebrophyline 200mg (S.R)"],
     KeyPoint: [
       "Allergic rhinitis",
@@ -158,7 +158,7 @@ export const medList = [
   },
   {
     Item: 11,
-    Name: "MlukCOLD Tab",
+    Name: "Mluk COLD Tab",
     Composition: ["Phenylephrine Hcl 10mg", "Chlorpheniramine Maleate 2 mg", "Paracelamol 500 mg"],
     KeyPoint: [
       "Allergic rhinitis",
@@ -244,7 +244,7 @@ export const medList = [
   },
   {
     Item: 18,
-    Name: "AiKON CV 625 Tab",
+    Name: "AiKON CV - 625 Tab",
     Composition: ["Amoxycillin 500 mg", "Potassium Clavulanic Acid 125 mg"],
     KeyPoint: [
       "Upper respiratory tract infection",

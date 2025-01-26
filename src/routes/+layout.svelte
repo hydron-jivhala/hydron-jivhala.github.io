@@ -56,7 +56,7 @@
         </li>
         <li class="nav-item  ">
           <a class="navbar-brand rounded-pill" class:active={page.url.pathname.includes("spices")} href="./spices">
-            <img id="logo" class="img-fluid p-sm-1"     src="./j_logo2.png" alt="Jivhala Masale" /></a
+            <img id="logo" class="img-fluid p-sm-1" src="./j_logo2.png" alt="Jivhala Masale" /></a
           >
           <!-- <a
             class="nav-link btn btn-outline-secondary rounded-pill fw-semibold"
@@ -122,7 +122,7 @@
             <a class="link-dark fw-semibold" href="./"><i class="fa fa-home me-2"></i>Home</a>
             <a class="link-dark fw-semibold" href="./#exploreAll"><i class="fa fa-rectangle-list me-2"></i>Products</a>
             <a class="link-dark fw-semibold" href="./spices"><i class="fa fa-mortar-pestle me-2"></i>Jivala Masale</a>
-            <a class="link-dark fw-semibold" href="./media"><i class="fa fa-photo-film me-2"></i>Media</a>
+            <!-- <a class="link-dark fw-semibold" href="./media"><i class="fa fa-photo-film me-2"></i>Media</a> -->
           </div>
         </div>
         <div class="col-sm-4 border-sm-0 border-start border-dark border-opacity-25 ps-md-5">

@@ -155,10 +155,10 @@
             class="card-body"
             style="background: linear-gradient(157.59deg, hsla(0, 0%, 100%, 0.1) -2.85%, rgba(87, 67, 143, 0.1) 89.86%)"
           >
-            <h4 class="card-title">{med.Name}</h4>
+            <h4 class="card-title text-warning fw-bold">{med.Name}</h4>
 
             <div class="mt-4 d-flex align-items-center">
-              <p>{med.Desc}</p>
+              <p class="">{med.Desc}</p>
             </div>
           </div>
         </div>

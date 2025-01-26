@@ -15,7 +15,7 @@
 <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
   <div class="modal-content">
     <div class="modal-header py-1">
-      <h2 class="">{prod.Name}</h2>
+      <h2 class="text-success">{prod.Name}</h2>
       <a class="ms-auto px-2 text-black-50" href="#" data-bs-dismiss="modal"><i class="fa fa-close fa-2x"></i></a>
     </div>
 
@@ -28,7 +28,7 @@
       >
         <div class="container">
           <div class="row d-flex mt-3 gy-3">
-            <h1 class="display-3 text-center fw-bolder m-0 mt-3 text-success">
+            <h1 class="display-3 text-center fw-bolder m-0 mt-3 text-primary">
               <sup><i class="fa fa-prescription fs-5"></i></sup>
               {prod.Name}
             </h1>
