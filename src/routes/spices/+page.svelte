@@ -81,6 +81,7 @@
   ];
 </script>
 
+<div class="container-fluid m-0 pb-5"> 
 <header class="header-spices py-6 shadow-lg">
   <div class="container">
     <div class="row">
@@ -145,30 +146,31 @@
   </div>
 </header>
 
-<div class="container-sm mt-6">
-  <div class="row g-4 g-lg-5 p-2">
-    {#each prodList as med, i}
-      <div class="col-sm-6 col-md-4 wow animate__pulse">
-        <div class="card shadow">
-          <img class="card-img-left" src="./{med.Image}.jpg" />
-          <div
-            class="card-body"
-            style="background: linear-gradient(157.59deg, hsla(0, 0%, 100%, 0.1) -2.85%, rgba(87, 67, 143, 0.1) 89.86%)"
-          >
-            <h4 class="card-title text-warning fw-bold">{med.Name}</h4>
+  <div class="container-sm mt-6">
+    <div class="row g-4 g-lg-5 p-2">
+      {#each prodList as med, i}
+        <div class="col-sm-6 col-md-4 wow animate__pulse">
+          <div class="card shadow">
+            <img class="card-img-left" src="./{med.Image}.jpg" />
+            <div
+              class="card-body"
+              style="background: linear-gradient(157.59deg, hsla(0, 0%, 100%, 0.1) -2.85%, rgba(87, 67, 143, 0.1) 89.86%)"
+            >
+              <h4 class="card-title text-warning fw-bold">{med.Name}</h4>
 
-            <div class="mt-4 d-flex align-items-center">
-              <p class="">{med.Desc}</p>
+              <div class="mt-4 d-flex align-items-center">
+                <p class="">{med.Desc}</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    {/each}
+      {/each}
+    </div>
   </div>
 </div>
 
 <style>
-  :global(body.body) {
+  .container-fluid {
     background: linear-gradient(270deg, rgb(185 156 137 / 30%) 0%, rgb(253 186 100 / 58%) 100%) !important;
   }
 </style>

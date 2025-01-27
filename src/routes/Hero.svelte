@@ -18,8 +18,8 @@
   });
 </script>
 
-<header class="header py-8 shadow-lg mt-8">
-  <div class="container rounded-3">
+<header class="header py-8  shadow-lg mt-sm-6 mt-lg-8">
+  <div class="container rounded-3 pt-lg-6">
     <div class="row">
       <!-- style="background: linear-gradient(127deg, rgba(59, 232, 238, 0.884) 33.86%, hsl(275deg 14.1% 77.49% / 36%) 92.85%)" -->
       <h1 class="display-1 text-center my-3 fw-bolder p-2 wow animate__pulse">Hydron Healthcare Pvt. Ltd.</h1>

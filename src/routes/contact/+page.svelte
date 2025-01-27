@@ -10,7 +10,7 @@
 </script>
   
 
-<div class="container-xl mt-8">
+<div class="container-xl mt-7 mb-5">
   <h4 class="display-6 my-3 text-center text-muted fw-normal">Contact Us</h4>
 
   <p class="lead text-center text-light-emphasis w-75 m-auto">Any query related to product, service, order or delivery?</p>

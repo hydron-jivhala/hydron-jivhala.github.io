@@ -39,7 +39,7 @@
   </script>
 </svelte:head>
 
-<nav class="navbar navbar-expand fixed-top p-0 shadow-lg bg-secondaryZ"  class:sticky-nav={page.url.pathname == "/"}>
+<nav class="navbar navbar-expand fixed-top p-0 shadow-lg bg-secondaryZ" >
   <div class="container-fluid">
     
     <div class="collapseZ navbar-collapse " id="navbarNavAltMarkup">
@@ -82,10 +82,10 @@
   </button>
 
   <div
-    class="container-fluid sticky-bottom text-black fs-6 border-top shadow-lg py-5 mt-3 mt-md-5"
+    class="container-fluid sticky-bottom text-black fs-6 border-top shadow-lg pb-5 mt-0"
     style="background-image: linear-gradient(11deg, #00c2e9 0%, #80d0c7 100%)"
   >
-    <div class="container-xl">
+    <div class="container-xl pt-5">
       <div class="row gy-3 py-2">
         <div class="col-sm-4">
           <h5 class="opacity-75">Connect with us</h5>
