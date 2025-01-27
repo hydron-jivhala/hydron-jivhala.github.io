@@ -81,7 +81,7 @@
   ];
 </script>
 
-<div class="container-fluid m-0 pb-5"> 
+<div class="container-fluid m-0 pb-5 px-0"> 
 <header class="header-spices py-6 shadow-lg">
   <div class="container">
     <div class="row">
@@ -146,7 +146,7 @@
   </div>
 </header>
 
-  <div class="container-sm mt-6">
+  <div class="container-xl mt-6">
     <div class="row g-4 g-lg-5 p-2">
       {#each prodList as med, i}
         <div class="col-sm-6 col-md-4 wow animate__pulse">
