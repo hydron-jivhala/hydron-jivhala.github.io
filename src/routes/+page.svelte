@@ -61,7 +61,7 @@
             </div>
             <div class="col-sm-4 d-flex align-self-center">
               <div class="p-3 me-md-5">
-                <h5 class="card-title">{med.Name}</h5>
+                <h5 class="card-title text-primary">{med.Name}</h5>
                 <h6 class="text-body-secondary">{med.Composition}</h6>
                 <p class="card-text text-body-secondary small">
                   {med.KeyPoint}
@@ -104,7 +104,7 @@
             class="card-body"
             style="background: linear-gradient(157.59deg, hsla(0, 0%, 100%, 0.1) -2.85%, rgba(87, 67, 143, 0.1) 89.86%)"
           >
-            <h4 class="card-title">{med.Name}</h4>
+            <h4 class="card-title text-primary">{med.Name}</h4>
             <!-- <h6 class="text-body-secondary">{med.Composition.map((e) => e.concat(" "))}</h6> -->
             <!-- <ul>
               {#each med.Composition as comp}

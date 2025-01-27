@@ -28,7 +28,7 @@
       >
         <div class="container">
           <div class="row d-flex mt-3 gy-3">
-            <h1 class="display-3 text-center fw-bolder m-0 mt-3 text-primary">
+            <h1 class="display-3 z-1 text-center fw-bolder m-0 mt-3 text-primary   ">
               <sup><i class="fa fa-prescription fs-5"></i></sup>
               {prod.Name}
             </h1>
@@ -90,22 +90,3 @@
     </div>
   </div>
 </div>
-
-<style lang="scss">
-  /* .header-prod {
-  min-height: 100vh;
-  background: linear-gradient(to bottom right, rgba(212, 249, 253, 0.911), rgba(237, 253, 251, 0.959)),
-    url("{prod.Item}_med.jpg") center center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  color: rgb(41, 0, 39) !important;
-  h1 {
-    text-shadow: 0px 2px 2px rgba(176, 185, 183, 0.4);
-  }
-  .features li {
-    border-color: #1a485e;
-    background-image: linear-gradient(109.6deg, rgba(15, 2, 2, 1) 11.2%, rgba(36, 163, 190, 1) 91.1%);
-    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(15, 146, 148) 0%, rgb(76, 163, 115) 90%);
-  }
-} */
-</style>
