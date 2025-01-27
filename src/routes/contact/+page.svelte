@@ -45,7 +45,7 @@
           <select class="form-select form-select-lg" placeholder="Email">
             <option>Select service</option>
             <option value="1">Hydron</option>
-            <option value="2">Jivala Masale</option>
+            <option value="2">Jivhala Masale</option>
             <option value="3">Other</option>
           </select>
         </div>
@@ -81,7 +81,7 @@
   <div class="row">
     <div class="col-sm-10 offset-sm-1 text-center mt-4">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.984318088892!2d73.7561531885481!3d18.574745722483197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b91ad7e30a77%3A0xbb3521754d149311!2sBalewadi%20Stadium!5e0!3m2!1sen!2sin!4v1721678262792!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.2267408216053!2d73.84772382621723!3d18.518653069230748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c07a5772ee9d%3A0x5189b648eaddaf35!2sShaniwar%20Peth%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1737965795895!5m2!1sen!2sin"
         width="100%"
         height="450"
         style="border: 0"

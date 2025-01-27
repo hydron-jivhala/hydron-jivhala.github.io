@@ -89,11 +89,11 @@
     </div>
 
     <div class="row pt-2 border-2 rounded-3 text-center">
-      <h1 class="display-1 my-3 fw-bolder p-2">Jivala Masale</h1>
+      <h1 class="display-1 my-3 fw-bolder p-2">Jivhala Masale</h1>
       <h4 class="display-4 my-4 fw-bolder fst-italic text-warning">Taste of Love</h4>
 
       <p class="display-6 px-md-8 fw-semibold text-white">
-        At Jivala, we believe that life is too short for bland food. Our journey began in the heart of spice-loving
+        At Jivhala, we believe that life is too short for bland food. Our journey began in the heart of spice-loving
         kitchens, where we discovered the magic that a pinch of the right spice can bring to any dish.
       </p>
 

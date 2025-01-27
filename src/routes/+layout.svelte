@@ -61,7 +61,7 @@
           <!-- <a
             class="nav-link btn btn-outline-secondary rounded-pill fw-semibold"
             class:active={page.url.pathname.includes("spices")}
-            href="./spices">Jivala Masale</a
+            href="./spices">Jivhala Masale</a
           > -->
         </li>
       </ul>
@@ -121,7 +121,7 @@
           <div class="vstack gap-1 link-underline-opacity-75-hover">
             <a class="link-dark fw-semibold" href="./"><i class="fa fa-home me-2"></i>Home</a>
             <a class="link-dark fw-semibold" href="./#exploreAll"><i class="fa fa-rectangle-list me-2"></i>Products</a>
-            <a class="link-dark fw-semibold" href="./spices"><i class="fa fa-mortar-pestle me-2"></i>Jivala Masale</a>
+            <a class="link-dark fw-semibold" href="./spices"><i class="fa fa-mortar-pestle me-2"></i>Jivhala Masale</a>
             <!-- <a class="link-dark fw-semibold" href="./media"><i class="fa fa-photo-film me-2"></i>Media</a> -->
           </div>
         </div>
