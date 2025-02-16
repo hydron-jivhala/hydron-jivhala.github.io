@@ -49,8 +49,9 @@
           >
         </li>
         <li class="nav-item d-flex flex-column align-items-end justify-content-center shadow-xl rounded-pill border-4">
-            <span class="d-none d-lg-block">Hydron Women Empowerment</span>  
+            
           <a class="navbar-brand rounded-pill" class:active={page.url.pathname.includes("spices")} href="./spices">
+            <!-- <span class="d-none d-lg-block">Hydron Women Empowerment</span>   -->
             <img id="logo" class="img-fluid p-sm-1 Zh-50" src="./j_logo2.png" alt="Jivhala Masale" /></a
           >
         </li>
