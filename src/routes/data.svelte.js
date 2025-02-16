@@ -6,6 +6,7 @@ export const medList = [
   {
     Item: 1,
     Name: "CoCal Lozenges",
+    Star : true,
     Composition: ["Calcium Carbonate 800 mg", "Equivalent to 320 mg Elemental Calcium"],
     KeyPoint: [
       "Calcium Deficiency",
@@ -146,6 +147,7 @@ export const medList = [
   {
     Item: 10,
     Name: "MLuk-AF Tab",
+    Star : true,
     Composition: ["Montelukast 10mg", "Fexofenadine 120mg", "Acebrophyline 200mg (S.R)"],
     KeyPoint: [
       "Allergic rhinitis",
@@ -260,6 +262,7 @@ export const medList = [
   {
     Item: 19,
     Name: "AiKON CV Forte Syrup",
+    Star : true,
     Composition: ["Amoxycillin 400 mg", "Clavulanic Acid 57 mg"],
     KeyPoint: [
       "Upper respiratory tract infection",

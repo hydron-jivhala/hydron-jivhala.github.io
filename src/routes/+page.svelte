@@ -5,7 +5,7 @@
   import { selectedItem, medList } from "./data.svelte.js";
   /*   import scriptSrc2 from "wowjs/dist/wow.js?url"; */
 
-  const startMed = medList.filter((m) => m.Item < 5);
+  const startMed = medList.filter((m) => m.Star);
   let wowLoaded = false;
   onMount(() => {
     main.setupSwiper();
