@@ -170,8 +170,8 @@
               <div class="mt-4 d-flex align-items-center">
                 <p class="text-danger-emphasis">{med.Desc}</p>
               </div>
-              <a
-                class="btn stretched-link text-nowrap m-0 p-0"
+              <a style="height: 0;"
+                class="btn stretched-link m-0 p-0 h-0 d-block"
                 data-bs-toggle="modal"
                 data-bs-target="#spiceModal"
                 data-bs-item={med.Image}
