@@ -43,7 +43,7 @@
   <div class="container-fluid">
     
     <div class="collapseZ navbar-collapse " id="navbarNavAltMarkup">
-      <ul class="navbar-nav w-100 justify-content-between ">
+      <ul class="navbar-nav w-100 justify-content-evenly ">
         <li class="nav-item ">
           <a class="navbar-brand rounded-pill" href="./" class:active={page.url.pathname == "/"}>
             <img id="logo" class="img-fluid p-sm-1 " src="./h_logo4.png" alt="Hydron" /></a
