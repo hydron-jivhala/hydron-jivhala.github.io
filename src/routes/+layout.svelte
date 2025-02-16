@@ -39,19 +39,19 @@
   </script>
 </svelte:head>
 
-<nav class="navbar navbar-expand fixed-top p-0 shadow-lg bg-secondaryZ" >
+<nav class="navbar navbar-expand fixed-top p-0 shadow-lg bg-secondaryZ">
   <div class="container-fluid">
-    
-    <div class="collapseZ navbar-collapse " id="navbarNavAltMarkup">
-      <ul class="navbar-nav w-100 justify-content-evenly ">
-        <li class="nav-item ">
+    <div class="collapseZ navbar-collapse" id="navbarNavAltMarkup">
+      <ul class="navbar-nav w-100 justify-content-evenly">
+        <li class="nav-item">
           <a class="navbar-brand rounded-pill" href="./" class:active={page.url.pathname == "/"}>
-            <img id="logo" class="img-fluid p-sm-1 " src="./h_logo4.png" alt="Hydron" /></a
+            <img id="logo" class="img-fluid p-sm-1" src="./h_logo4.png" alt="Hydron" /></a
           >
         </li>
-        <li class="nav-item  ">
+        <li class="nav-item d-flex flex-column align-items-end justify-content-center shadow-xl rounded-pill border-4">
+            <span class="d-none d-lg-block">Hydron Women Empowerment</span>  
           <a class="navbar-brand rounded-pill" class:active={page.url.pathname.includes("spices")} href="./spices">
-            <img id="logo" class="img-fluid p-sm-1" src="./j_logo2.png" alt="Jivhala Masale" /></a
+            <img id="logo" class="img-fluid p-sm-1 Zh-50" src="./j_logo2.png" alt="Jivhala Masale" /></a
           >
         </li>
       </ul>
