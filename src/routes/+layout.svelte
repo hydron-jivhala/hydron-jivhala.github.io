@@ -43,26 +43,16 @@
   <div class="container-fluid">
     
     <div class="collapseZ navbar-collapse " id="navbarNavAltMarkup">
-      <ul class="navbar-nav w-100 justify-content-evenly ">
+      <ul class="navbar-nav w-100 justify-content-between ">
         <li class="nav-item ">
           <a class="navbar-brand rounded-pill" href="./" class:active={page.url.pathname == "/"}>
             <img id="logo" class="img-fluid p-sm-1 " src="./h_logo4.png" alt="Hydron" /></a
           >
-          <!-- <a  mx-auto  
-            class="nav-link btn btn-outline-secondary rounded-pill fw-semibold active"
-            class:active={page.url.pathname == "/"}
-            href="./">Hydron</a
-          > -->
         </li>
         <li class="nav-item  ">
           <a class="navbar-brand rounded-pill" class:active={page.url.pathname.includes("spices")} href="./spices">
             <img id="logo" class="img-fluid p-sm-1" src="./j_logo2.png" alt="Jivhala Masale" /></a
           >
-          <!-- <a
-            class="nav-link btn btn-outline-secondary rounded-pill fw-semibold"
-            class:active={page.url.pathname.includes("spices")}
-            href="./spices">Jivhala Masale</a
-          > -->
         </li>
       </ul>
     </div>
@@ -158,106 +148,3 @@
 <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <Product></Product>
 </div>
-
-<!-- <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header py-1">
-        <h2 class="">Gabadron-NT</h2>
-        <a class="ms-auto px-2 text-black-50" href="#" data-bs-dismiss="modal"><i class="fa fa-close fa-2x"></i></a>
-      </div>
-
-      <div class="modal-body p-0">
-        <div class="header-prod p-2 rounded-1" id="product">
-          <div class="container">
-            <div class="row d-flex mt-3 gy-3">
-              <div class="col-lg-6 h-100 align-self-center text-center">
-                <img src="/medcine.jpg" alt="" class="img-fluid shadow-lg rounded-2" />
-              </div>
-              <div class="col-lg-6 my-5">
-                <div class="text-center mt-4">
-                  <h1 class="display-3 text-center fw-bolder m-0 mt-3">
-                    <sup><i class="fa fa-prescription fs-5"></i></sup>
-                    Gabadron<span class="text-success">-NT</span>
-                  </h1>
-                  <small class="lead fw-normal">Pregabaline 75 mg, Nortriptyline Hydrochloride 10mg</small>
-                  <h2 class="m-0 p-0 mt-3 fst-italic">
-                    Your <span class="text-success">masterstroke</span> for
-                  </h2>
-                  <h2 class="m-0 p-0 fst-italic">All types of neuropathy pain</h2>
-                </div>
-
-                <div class="row mt-5 gy-3">
-                  <div class="col-sm-6">
-                    <div class="card shadow h-100">
-                      <div class="card-header text-center text-bg-success lead fw-semibold">Pregabalin 75mg</div>
-                      <div class="card-body">
-                        is Alpha 2 delta ligand. Decreases the pain by modulating calcium channel activity of the nerve
-                        cells.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="card shadow">
-                      <div class="card-header text-center text-bg-success lead fw-semibold">Nortriptyline 10mg</div>
-                      <div class="card-body">
-                        is a tricyclic antidepressant. Increases the levels of serotonin and noradrenaline. Stop the
-                        movement of pain signals in the brain.
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="container-lg mb-4">
-            <div class="row d-flex mt-2 gy-2">
-              <div class="col-lg-6 my-5">
-                <div class="text-center mb-3">
-                  <div class="btn-group">
-                    <span class="btn btn-success fs-3 rounded-start-5 fst-italic">Effective In</span>
-                    <span class="btn btn-warning fs-3 rounded-end-5 fw-lighter">Neuropathy Pain</span>
-                  </div>
-                </div>
-
-                <ul class="list-group list-group-flush text-center rounded-2 shadow-lg">
-                  <li class="list-group-item py-3">
-                    <h5 class="ps-2">
-                      <i class="fas fa-hand-holding-medical text-success"></i> Neuropathic Pain Associated with:
-                    </h5>
-                    <ul class="list-unstyled mt-3 gy-2">
-                      <li class="px-3 mx-3 rounded-pill text-bg-warning d-inline-block">Spondylitis</li>
-                      <li class="px-3 mx-3 rounded-pill text-bg-warning d-inline-block">Arthritis</li>
-                      <li class="px-3 mx-3 rounded-pill text-bg-warning d-inline-block">Sciatica</li>
-                    </ul>
-                  </li>
-                  <li class="list-group-item py-3">
-                    <h5 class="ps-2">
-                      <i class="fas fa-hand-holding-medical text-success"></i> Diabetic Neuropathy
-                    </h5>
-                  </li>
-                  <li class="list-group-item py-3">
-                    <h5 class="ps-2">
-                      <i class="fas fa-hand-holding-medical text-success"></i> Peripherial Neuropathy
-                    </h5>
-                  </li>
-                  <li class="list-group-item py-3">
-                    <h5 class="ps-2">
-                      <i class="fas fa-hand-holding-medical text-success"></i> Diabetic Neuropathy
-                    </h5>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="col-lg-6 h-100 align-self-center text-center">
-                <img src="/sciattica.jpg" alt="" class="img-fluid shadow-lg rounded-2" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
- -->
