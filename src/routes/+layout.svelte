@@ -45,14 +45,14 @@
       <ul class="navbar-nav w-100 justify-content-evenly">
         <li class="nav-item">
           <a class="navbar-brand rounded-pill" href="./" class:active={page.url.pathname == "/"}>
-            <img id="logo" class="img-fluid p-sm-1" src="./h_logo4.png" alt="Hydron" /></a
+            <img id="logo" class="img-fluid p-sm-1" style="max-height: 200px;" src="./h_logo4.png" alt="Hydron" /></a
           >
         </li>
         <li class="nav-item d-flex flex-column align-items-end justify-content-center shadow-xl rounded-pill border-4">
             
           <a class="navbar-brand rounded-pill" class:active={page.url.pathname.includes("spices")} href="./spices">
             <!-- <span class="d-none d-lg-block">Hydron Women Empowerment</span>   -->
-            <img id="logo" class="img-fluid p-sm-1 Zh-50" src="./j_logo2.png" alt="Jivhala Masale" /></a
+            <img id="logo" class="img-fluid p-sm-1 " style="max-height: 200px;" src="./j_logo2.png" alt="Jivhala Masale" /></a
           >
         </li>
       </ul>
