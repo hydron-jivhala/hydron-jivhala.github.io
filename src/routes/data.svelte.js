@@ -12,7 +12,7 @@ export const medList = [
       "Bronchodilator",
       "Respiratory infections",
       "bronchospasm and wheezing",
-      "Cough relief ",
+      "Cough relief",
       "Mucus clearance",
       "Improved lung function",
     ],
