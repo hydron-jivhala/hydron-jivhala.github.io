@@ -24,7 +24,7 @@ const config = {
     }),
     paths: {
       //base: process.argv.includes("dev") ? "" : process.env.BASE_PATH,
-      base: process.env.NODE_ENV === 'production' ? '/your-repo-name' : ''
+      base: process.env.NODE_ENV === 'production' ? '/hydron-jivhala.github.io' : ''
     },
   },
 };
