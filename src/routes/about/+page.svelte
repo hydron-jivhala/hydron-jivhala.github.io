@@ -142,17 +142,17 @@
     <div class=" col-sm-3 my-3 card shadow-lg border-0">
       <div class="">
         <div class="card-body">
-          <div class="text-center">
+          <!-- <div class="text-center">
             <img
               style="width: 35%"
               class="rounded-circle shadow card-img-top"
               src="https://bootdey.com/img/Content/avatar/avatar1.png"
               alt="Team member"
             />
-          </div>
+          </div> -->
           <div class="card-text pt-1">
             <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Ajay Sarda</h5>
-            <div class="mb-3 text-center">Director</div>
+            <div class="mb-3 text-muted text-center">Director</div>
             <div>A visionary leader with a passion for innovation, driving the company’s global expansion and mission of accessible healthcare</div>
           </div>
 
@@ -176,17 +176,17 @@
     <div class=" col-sm-3 my-3 card shadow-lg border-0 mr-2">
       <div class="">
         <div class="card-body">
-          <div class="text-center">
+          <!-- <div class="text-center">
             <img
               style="width: 35%"
               class="rounded-circle shadow card-img-top"
               src="https://bootdey.com/img/Content/avatar/avatar1.png"
               alt="Team member"
             />
-          </div>
+          </div> -->
           <div class="card-text pt-1">
             <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Girish Shinde</h5>
-            <div class="mb-3 text-center">Director</div>
+            <div class="mb-3 text-muted text-center">Director</div>
             <div>Visionary co-founder who transformed the company into a leading pharma provider through a commitment to affordable, quality healthcare</div>
           </div>
 
@@ -209,17 +209,17 @@
     <div class=" col-sm-3 my-3 card shadow-lg border-0">
       <div class="">
         <div class="card-body">
-          <div class="text-center">
+          <!-- <div class="text-center">
             <img
               style="width: 35%"
               class="rounded-circle shadow card-img-top"
               src="https://bootdey.com/img/Content/avatar/avatar8.png"
               alt="Team member"
             />
-          </div>
+          </div> -->
           <div class="card-text pt-1">
             <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Poonam Sarda</h5>
-            <div class="mb-3 text-center">Director</div>
+            <div class="mb-3 text-muted text-center">Director</div>
             <div>A trailblazer in drug development, committed to advancing medical science.</div>
           </div>
 
@@ -242,17 +242,17 @@
     <div class=" col-sm-3 my-3 card shadow-lg border-0">
       <div class="">
         <div class="card-body">
-          <div class="text-center">
+          <!-- <div class="text-center">
             <img
               style="width: 35%"
               class="rounded-circle shadow card-img-top"
               src="https://bootdey.com/img/Content/avatar/avatar8.png"
               alt="Team member"
             />
-          </div>
+          </div> -->
           <div class="card-text pt-1">
             <h5 class="member-name mb-0 text-center text-primary font-weight-bold">Nilima Shinde</h5>
-            <div class="mb-3 text-center">Director</div>
+            <div class="mb-3 text-muted text-center">Director</div>
             <div>Leader driving innovation and global growth in spice manufacturing, exports, and organic cultivation.</div>
           </div>
 

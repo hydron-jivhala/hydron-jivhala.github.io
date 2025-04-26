@@ -4,6 +4,20 @@ export let selectedItem = $state({
 
 export const medList = [
   {
+    Item: 31,
+    Name: "Hydkof LS",
+    Star : true,
+    Composition: ["Levosalbutamol 1 mg", "Ambroxol Hydrochloride 30 mg" ,"Guaifenesin 50 mg Expectorant"],
+    KeyPoint: [
+      "Bronchodilator",
+      "Respiratory infections",
+      "bronchospasm and wheezing",
+      "Cough relief ",
+      "Mucus clearance",
+      "Improved lung function",
+    ],
+  },
+  {
     Item: 1,
     Name: "CoCal Lozenges",
     Star : true,
