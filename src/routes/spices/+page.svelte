@@ -91,10 +91,10 @@
 </script>
 
 <div class="container-fluid m-0 pb-5 px-0">
-  <header class="header-spices py-6 shadow-lg">
+  <header class="header-spices pt-6 pb-0 shadow-lg">
     <div class="container">
       <div class="row">
-        <img class="card-img-bottom img-fluid w-75 h-75 mx-auto" src="./j_logo2.png" />
+        <img class="card-img-bottom img-fluid mx-auto" src="./j_logo2.png" style="max-height: 300px;width: auto;" />
       </div>
 
       <div class="row pt-2 border-2 rounded-3 text-center">
@@ -112,9 +112,9 @@
             data-wow-delay=".1s"
           >
             <div class="card-body d-flex">
-              <i class="fa fa-wheat-awn fa-4x text-success align-content-center"></i>
+              <i class="fa fa-wheat-awn fa-3x text-success align-content-center"></i>
               <div class="px-2 px-sm-4 text-start">
-                <p class="lead fw-normal text-warning">
+                <p class="display-9 fw-normal text-warning">
                   <b>Sourced with Love :</b> We partner directly with farmers who nurture their spice crops like family.
                   Quality and sustainability are our guiding stars.
                 </p>
@@ -126,9 +126,9 @@
             data-wow-delay=".2s"
           >
             <div class="card-body d-flex">
-              <i class="fa fa-pepper-hot fa-4x text-danger align-content-center"></i>
+              <i class="fa fa-pepper-hot fa-3x text-danger align-content-center"></i>
               <div class="px-2 px-sm-4 text-start">
-                <p class="lead fw-normal text-warning">
+                <p class="display-9 fw-normal text-warning">
                   <b>Freshness Unleashed :</b> Our spices are ground in small batches to preserve their essence. When you
                   open that jar, you’re inhaling pure magic.
                 </p>
@@ -140,9 +140,9 @@
             data-wow-delay=".3s"
           >
             <div class="card-body d-flex">
-              <i class="fa fa-medal fa-4x text-warning align-content-center"></i>
+              <i class="fa fa-medal fa-3x text-warning align-content-center"></i>
               <div class="px-2 px-sm-4 text-danger">
-                <p class="lead fw-normal text-warning">
+                <p class="display-9 fw-normal text-warning">
                   <b>Quality Assurance :</b> Safety and quality are non-negotiable. Our state-of-the-art manufacturing facilities
                   adhere to the highest industry standards. Every batch undergoes rigorous quality control to ensure efficacy
                   and purity.
@@ -151,6 +151,13 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="row">
+        <img
+          class="card-img-bottom img-fluid mx-auto"
+          src="./jivhalaGirl.jpg"
+          style="max-height: 500px;width: auto;opacity:.85"
+        />
       </div>
     </div>
   </header>
@@ -170,7 +177,8 @@
               <div class="mt-4 d-flex align-items-center">
                 <p class="text-danger-emphasis">{med.Desc}</p>
               </div>
-              <a style="height: 0;"
+              <a
+                style="height: 0;"
                 class="btn stretched-link m-0 p-0 h-0 d-block"
                 data-bs-toggle="modal"
                 data-bs-target="#spiceModal"

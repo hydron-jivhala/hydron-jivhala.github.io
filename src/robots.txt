@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hydron-jivhala.github.io/sitemap.xml

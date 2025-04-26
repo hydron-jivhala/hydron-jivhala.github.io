@@ -82,28 +82,28 @@
           <h5 class="opacity-75">Connect with us</h5>
           <ul class="list-inline link-underline-opacity-75-hover">
             <li class="list-inline-item">
-              <a href=""><i class="fa-brands fa-square-facebook fs-1 link-dark"></i></a>
+              <a href="https://www.facebook.com/people/Hydron-Healthcare-Pvt-Ltd/100054263331369/" target="_blank"><i class="fa-brands fa-square-facebook fs-1 link-dark"></i></a>
             </li>
             <li class="list-inline-item">
-              <a href=""><i class="fa-brands fa-square-twitter fs-1 link-dark"></i></a>
+              <a href="https://www.facebook.com/people/Hydron-Healthcare-Pvt-Ltd/100054263331369/" target="_blank"><i class="fa-brands fa-square-x-twitter fs-1 link-dark"></i></a>
             </li>
             <li class="list-inline-item">
-              <a href=""><i class="fa-brands fa-square-youtube fs-1 link-dark"></i></a>
+              <a href="https://www.instagram.com/hydron_healthcare/" target="_blank"><i class="fa-brands fa-square-youtube fs-1 link-dark"></i></a>
             </li>
             <li class="list-inline-item">
-              <a href=""><i class="fa-brands fa-square-instagram fs-1 link-dark"></i></a>
+                <a href="https://www.instagram.com/hydron_healthcare/" target="_blank"><i class="fa-brands fa-square-instagram fs-1 link-dark"></i></a>
             </li>
           </ul>
 
           <div class="vstack mt-3">
-            <a class="link-dark fw-semibold" href="tel:919123456789"
-              ><i class="fa fa-phone me-2"></i>+91 9123 45 67 89</a
+            <a class="link-dark fw-semibold" href="tel:919665304040"
+              ><i class="fa fa-phone me-2"></i>+91 9665 304040</a
             >
-            <a class="link-dark fw-semibold" href="tel:919123456789"
-              ><i class="fa fa-phone me-2"></i>+91 9123 45 67 89</a
+            <a class="link-dark fw-semibold" href="tel:919665304040"
+              ><i class="fa fa-phone me-2"></i>+91 9665 304040</a
             >
-            <a class="link-dark fw-semibold" href="mailto:test.hydron@gmail.com"
-              ><i class="fa fa-envelope me-2"></i>test.hydron@gmail.com</a
+            <a class="link-dark fw-semibold" href="mailto:hydronhealthcare@gmail.com"
+              ><i class="fa fa-envelope me-2"></i>hydronhealthcare@gmail.com</a
             >
           </div>
         </div>
