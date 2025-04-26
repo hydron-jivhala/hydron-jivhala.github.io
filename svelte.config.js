@@ -22,9 +22,10 @@ const config = {
       //precompress: false,
       strict: true,
     }),
-    /* paths: {
-      base: process.argv.includes("dev") ? "" : process.env.BASE_PATH,
-    }, */
+    paths: {
+      //base: process.argv.includes("dev") ? "" : process.env.BASE_PATH,
+      base: process.env.NODE_ENV === 'production' ? '/your-repo-name' : ''
+    },
   },
 };
 
