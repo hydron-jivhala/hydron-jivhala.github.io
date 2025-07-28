@@ -19,7 +19,14 @@
         <div class="card-title h4 fw-medium">Our Mission</div>
         <!--  <div class="card-title fw-semibold lead">Empowering Health, Enriching Lives:</div> -->
         <p class="fw-normal text-muted">
-          Hydron is a dedicated healthcare solutions company that aims to provide exceptional services to its clients.
+
+          Hydron Healthcare Pvt Ltd is a dedicated pharmaceutical company based in Pune, India, 
+          dedicated to improving health and well-being through innovative, high-quality medicines. 
+          With a strong commitment to research, safety, and patient care, Hydron Healthcare delivers 
+          a wide range of trusted pharmaceutical products across India. 
+          Our mission is to make advanced healthcare accessible and affordable for all, 
+          while upholding the highest standards of quality and integrity.
+          Hydron is a healthcare solutions company that aims to provide exceptional services to its clients.
           We are committed to delivering innovative and customized solutions that meet your specific health needs.
         </p>
         <p class="fw-normal text-muted">
@@ -273,4 +280,19 @@
       </div>
     </div>
   </div>
+
+   <div class="row" style="position: absolute; left: -9999px;">
+      <p>
+      Press Release
+      Hydron Healthcare Pvt Ltd: Advancing Health and Wellness in India
+      Pune, India – Hydron Healthcare Pvt Ltd, a premier pharmaceutical company, is proud to announce its continued commitment to delivering innovative and high-quality healthcare solutions. Based in Pune, Hydron Healthcare specializes in the research, development, and distribution of a wide range of medicines designed to improve patient outcomes and quality of life.
+      With a focus on safety, efficacy, and affordability, Hydron Healthcare has established itself as a trusted name in the Indian pharmaceutical industry. The company’s state-of-the-art manufacturing facilities and rigorous quality control processes ensure that every product meets the highest standards.
+      “We believe that everyone deserves access to safe and effective healthcare,” said Girish Shinde, Director of Hydron Healthcare Pvt Ltd. “Our mission is to empower communities by providing reliable medicines and fostering a culture of health and wellness.”
+      For more information, visit https://hydron-jivhala.github.io/ or contact us at hydronhealthcare@gmail.com.
+
+      Add the intro paragraph to your homepage for immediate SEO and branding benefit.
+      Share the press release with local news outlets, pharma directories, and on your social media channels.
+      </p> 
+    </div>
+
 </div>
