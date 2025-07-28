@@ -90,11 +90,29 @@
   ];
 </script>
 
+<svelte:head>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "Kanda Lasun Masala (Onion Garlic)",
+      "image": "https://hydron-jivhala.github.io/Kanda.jpg",
+      "brand": "Jivhala Masale",
+      "description": "Elevate your dishes with the robust flavors of our Kanda Garlic powder, a perfect blend of onion and garlic that adds a savory depth to any recipe.",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  </script>
+</svelte:head>
+
 <div class="container-fluid m-0 pb-5 px-0">
   <header class="header-spices pt-6 pb-0 shadow-lg">
     <div class="container">
       <div class="row">
-        <img class="card-img-bottom img-fluid mx-auto" src="./j_logo2.png" style="max-height: 300px;width: auto;" />
+        <img class="card-img-bottom img-fluid mx-auto" src="./j_logo2.png" style="max-height: 300px;width: auto;" alt="Jivhala Masale Logo" />
       </div>
 
       <div class="row pt-2 border-2 rounded-3 text-center">
@@ -167,7 +185,7 @@
       {#each prodList as med, i}
         <div class="col-sm-6 col-md-4 wow animate__pulse">
           <div class="card shadow">
-            <img class="card-img-left" src="./{med.Image}.jpg" />
+            <img class="card-img-left" src="./{med.Image}.jpg" alt="Jivhala Masale {med.Name}" />
             <div
               class="card-body"
               style="background: linear-gradient(157.59deg, hsla(0, 0%, 100%, 0.1) -2.85%, rgba(87, 67, 143, 0.1) 89.86%)"
@@ -210,7 +228,7 @@
       <div class="modal-body p-0">
         <div class="image-container" style="background-color: #5b5000;">
           <div class="align-self-center text-center">
-            <img src="./{prod.Image}.jpg" alt="" class="img-fluid px-5 px-sm-6 py-2 modal-image" />
+            <img src="./{prod.Image}.jpg" alt="Jivhala Masale {prod.Name}" class="img-fluid px-5 px-sm-6 py-2 modal-image" />
           </div>
         </div>
         <div class="mt-4 d-flex align-items-center">

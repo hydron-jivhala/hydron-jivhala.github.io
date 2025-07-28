@@ -40,7 +40,21 @@
 </script>
 
 <svelte:head>
-  <!-- <script src={scriptSrc2}></script> -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "Kanda Lasun Masala (Onion Garlic)",
+      "image": "https://hydron-jivhala.github.io/Kanda.jpg",
+      "brand": "Jivhala Masale",
+      "description": "Elevate your dishes with the robust flavors of our Kanda Garlic powder, a perfect blend of onion and garlic that adds a savory depth to any recipe.",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "INR",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  </script>
 </svelte:head>
 
 <Hero></Hero>
@@ -57,7 +71,7 @@
             style="background: linear-gradient(194deg, hsl(166.11deg 100% 97.57%) -2.85%, rgb(181 232 236) 100.86%)"
           >
             <div class="col-sm-8">
-              <img class="card-img-bottom img-fluid" src="./{med.Item}_med.jpg"  />
+              <img class="card-img-bottom img-fluid" src="./{med.Item}_med.jpg" alt="{med.Name} - {med.Composition}" />
             </div>
             <div class="col-sm-4 d-flex align-self-center">
               <div class="p-3 me-md-5">
